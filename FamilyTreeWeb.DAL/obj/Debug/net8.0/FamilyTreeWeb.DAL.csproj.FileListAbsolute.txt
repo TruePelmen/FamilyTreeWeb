@@ -1,0 +1,14 @@
+D:\Lab\FamilyTreeWeb\FamilyTreeWeb.DAL\bin\Debug\net8.0\FamilyTreeWeb.DAL.deps.json
+D:\Lab\FamilyTreeWeb\FamilyTreeWeb.DAL\bin\Debug\net8.0\FamilyTreeWeb.DAL.runtimeconfig.json
+D:\Lab\FamilyTreeWeb\FamilyTreeWeb.DAL\bin\Debug\net8.0\FamilyTreeWeb.DAL.dll
+D:\Lab\FamilyTreeWeb\FamilyTreeWeb.DAL\bin\Debug\net8.0\FamilyTreeWeb.DAL.pdb
+D:\Lab\FamilyTreeWeb\FamilyTreeWeb.DAL\obj\Debug\net8.0\FamilyTreeWeb.DAL.csproj.AssemblyReference.cache
+D:\Lab\FamilyTreeWeb\FamilyTreeWeb.DAL\obj\Debug\net8.0\FamilyTreeWeb.DAL.GeneratedMSBuildEditorConfig.editorconfig
+D:\Lab\FamilyTreeWeb\FamilyTreeWeb.DAL\obj\Debug\net8.0\FamilyTreeWeb.DAL.AssemblyInfoInputs.cache
+D:\Lab\FamilyTreeWeb\FamilyTreeWeb.DAL\obj\Debug\net8.0\FamilyTreeWeb.DAL.AssemblyInfo.cs
+D:\Lab\FamilyTreeWeb\FamilyTreeWeb.DAL\obj\Debug\net8.0\FamilyTreeWeb.DAL.csproj.CoreCompileInputs.cache
+D:\Lab\FamilyTreeWeb\FamilyTreeWeb.DAL\obj\Debug\net8.0\FamilyTreeWeb.DAL.dll
+D:\Lab\FamilyTreeWeb\FamilyTreeWeb.DAL\obj\Debug\net8.0\refint\FamilyTreeWeb.DAL.dll
+D:\Lab\FamilyTreeWeb\FamilyTreeWeb.DAL\obj\Debug\net8.0\FamilyTreeWeb.DAL.pdb
+D:\Lab\FamilyTreeWeb\FamilyTreeWeb.DAL\obj\Debug\net8.0\FamilyTreeWeb.DAL.genruntimeconfig.cache
+D:\Lab\FamilyTreeWeb\FamilyTreeWeb.DAL\obj\Debug\net8.0\ref\FamilyTreeWeb.DAL.dll
