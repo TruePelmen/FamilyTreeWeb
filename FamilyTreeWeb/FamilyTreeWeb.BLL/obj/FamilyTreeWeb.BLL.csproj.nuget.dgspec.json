@@ -1,26 +1,32 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Lab\\FamilyTreeWeb\\FamilyTreeWeb\\FamilyTreeWeb.BLL\\FamilyTreeWeb.BLL.csproj": {}
+    "D:\\University\\Software Engineering 2\\FamilyTreeWeb2\\FamilyTreeWeb\\FamilyTreeWeb\\FamilyTreeWeb.BLL\\FamilyTreeWeb.BLL.csproj": {}
   },
   "projects": {
-    "D:\\Lab\\FamilyTreeWeb\\FamilyTreeWeb\\FamilyTreeWeb.BLL\\FamilyTreeWeb.BLL.csproj": {
+    "D:\\University\\Software Engineering 2\\FamilyTreeWeb2\\FamilyTreeWeb\\FamilyTreeWeb\\FamilyTreeWeb.BLL\\FamilyTreeWeb.BLL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Lab\\FamilyTreeWeb\\FamilyTreeWeb\\FamilyTreeWeb.BLL\\FamilyTreeWeb.BLL.csproj",
+        "projectUniqueName": "D:\\University\\Software Engineering 2\\FamilyTreeWeb2\\FamilyTreeWeb\\FamilyTreeWeb\\FamilyTreeWeb.BLL\\FamilyTreeWeb.BLL.csproj",
         "projectName": "FamilyTreeWeb.BLL",
-        "projectPath": "D:\\Lab\\FamilyTreeWeb\\FamilyTreeWeb\\FamilyTreeWeb.BLL\\FamilyTreeWeb.BLL.csproj",
-        "packagesPath": "C:\\Users\\Di\\.nuget\\packages\\",
-        "outputPath": "D:\\Lab\\FamilyTreeWeb\\FamilyTreeWeb\\FamilyTreeWeb.BLL\\obj\\",
+        "projectPath": "D:\\University\\Software Engineering 2\\FamilyTreeWeb2\\FamilyTreeWeb\\FamilyTreeWeb\\FamilyTreeWeb.BLL\\FamilyTreeWeb.BLL.csproj",
+        "packagesPath": "C:\\Users\\Alex\\.nuget\\packages\\",
+        "outputPath": "D:\\University\\Software Engineering 2\\FamilyTreeWeb2\\FamilyTreeWeb\\FamilyTreeWeb\\FamilyTreeWeb.BLL\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "D:\\VS 2022\\VS 2022 Tools, components, SDK\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Di\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Alex\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {

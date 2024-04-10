@@ -1,26 +1,32 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Lab\\FamilyTreeWeb\\FamilyTreeWeb\\FamilyTreeWeb.DAL\\FamilyTreeWeb.DAL.csproj": {}
+    "D:\\University\\Software Engineering 2\\FamilyTreeWeb2\\FamilyTreeWeb\\FamilyTreeWeb\\FamilyTreeWeb.DAL\\FamilyTreeWeb.DAL.csproj": {}
   },
   "projects": {
-    "D:\\Lab\\FamilyTreeWeb\\FamilyTreeWeb\\FamilyTreeWeb.DAL\\FamilyTreeWeb.DAL.csproj": {
+    "D:\\University\\Software Engineering 2\\FamilyTreeWeb2\\FamilyTreeWeb\\FamilyTreeWeb\\FamilyTreeWeb.DAL\\FamilyTreeWeb.DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Lab\\FamilyTreeWeb\\FamilyTreeWeb\\FamilyTreeWeb.DAL\\FamilyTreeWeb.DAL.csproj",
+        "projectUniqueName": "D:\\University\\Software Engineering 2\\FamilyTreeWeb2\\FamilyTreeWeb\\FamilyTreeWeb\\FamilyTreeWeb.DAL\\FamilyTreeWeb.DAL.csproj",
         "projectName": "FamilyTreeWeb.DAL",
-        "projectPath": "D:\\Lab\\FamilyTreeWeb\\FamilyTreeWeb\\FamilyTreeWeb.DAL\\FamilyTreeWeb.DAL.csproj",
-        "packagesPath": "C:\\Users\\Di\\.nuget\\packages\\",
-        "outputPath": "D:\\Lab\\FamilyTreeWeb\\FamilyTreeWeb\\FamilyTreeWeb.DAL\\obj\\",
+        "projectPath": "D:\\University\\Software Engineering 2\\FamilyTreeWeb2\\FamilyTreeWeb\\FamilyTreeWeb\\FamilyTreeWeb.DAL\\FamilyTreeWeb.DAL.csproj",
+        "packagesPath": "C:\\Users\\Alex\\.nuget\\packages\\",
+        "outputPath": "D:\\University\\Software Engineering 2\\FamilyTreeWeb2\\FamilyTreeWeb\\FamilyTreeWeb\\FamilyTreeWeb.DAL\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "D:\\VS 2022\\VS 2022 Tools, components, SDK\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Di\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Alex\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -44,6 +50,10 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.3, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[8.0.3, )"

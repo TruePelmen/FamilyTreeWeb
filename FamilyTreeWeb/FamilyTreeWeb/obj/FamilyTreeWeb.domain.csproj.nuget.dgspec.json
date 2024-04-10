@@ -1,26 +1,32 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Lab\\FamilyTreeWeb\\FamilyTreeWeb\\FamilyTreeWeb\\FamilyTreeWeb.domain.csproj": {}
+    "D:\\University\\Software Engineering 2\\FamilyTreeWeb2\\FamilyTreeWeb\\FamilyTreeWeb\\FamilyTreeWeb\\FamilyTreeWeb.domain.csproj": {}
   },
   "projects": {
-    "D:\\Lab\\FamilyTreeWeb\\FamilyTreeWeb\\FamilyTreeWeb.BLL\\FamilyTreeWeb.BLL.csproj": {
+    "D:\\University\\Software Engineering 2\\FamilyTreeWeb2\\FamilyTreeWeb\\FamilyTreeWeb\\FamilyTreeWeb.BLL\\FamilyTreeWeb.BLL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Lab\\FamilyTreeWeb\\FamilyTreeWeb\\FamilyTreeWeb.BLL\\FamilyTreeWeb.BLL.csproj",
+        "projectUniqueName": "D:\\University\\Software Engineering 2\\FamilyTreeWeb2\\FamilyTreeWeb\\FamilyTreeWeb\\FamilyTreeWeb.BLL\\FamilyTreeWeb.BLL.csproj",
         "projectName": "FamilyTreeWeb.BLL",
-        "projectPath": "D:\\Lab\\FamilyTreeWeb\\FamilyTreeWeb\\FamilyTreeWeb.BLL\\FamilyTreeWeb.BLL.csproj",
-        "packagesPath": "C:\\Users\\Di\\.nuget\\packages\\",
-        "outputPath": "D:\\Lab\\FamilyTreeWeb\\FamilyTreeWeb\\FamilyTreeWeb.BLL\\obj\\",
+        "projectPath": "D:\\University\\Software Engineering 2\\FamilyTreeWeb2\\FamilyTreeWeb\\FamilyTreeWeb\\FamilyTreeWeb.BLL\\FamilyTreeWeb.BLL.csproj",
+        "packagesPath": "C:\\Users\\Alex\\.nuget\\packages\\",
+        "outputPath": "D:\\University\\Software Engineering 2\\FamilyTreeWeb2\\FamilyTreeWeb\\FamilyTreeWeb\\FamilyTreeWeb.BLL\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "D:\\VS 2022\\VS 2022 Tools, components, SDK\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Di\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Alex\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -63,23 +69,29 @@
         }
       }
     },
-    "D:\\Lab\\FamilyTreeWeb\\FamilyTreeWeb\\FamilyTreeWeb.DAL\\FamilyTreeWeb.DAL.csproj": {
+    "D:\\University\\Software Engineering 2\\FamilyTreeWeb2\\FamilyTreeWeb\\FamilyTreeWeb\\FamilyTreeWeb.DAL\\FamilyTreeWeb.DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Lab\\FamilyTreeWeb\\FamilyTreeWeb\\FamilyTreeWeb.DAL\\FamilyTreeWeb.DAL.csproj",
+        "projectUniqueName": "D:\\University\\Software Engineering 2\\FamilyTreeWeb2\\FamilyTreeWeb\\FamilyTreeWeb\\FamilyTreeWeb.DAL\\FamilyTreeWeb.DAL.csproj",
         "projectName": "FamilyTreeWeb.DAL",
-        "projectPath": "D:\\Lab\\FamilyTreeWeb\\FamilyTreeWeb\\FamilyTreeWeb.DAL\\FamilyTreeWeb.DAL.csproj",
-        "packagesPath": "C:\\Users\\Di\\.nuget\\packages\\",
-        "outputPath": "D:\\Lab\\FamilyTreeWeb\\FamilyTreeWeb\\FamilyTreeWeb.DAL\\obj\\",
+        "projectPath": "D:\\University\\Software Engineering 2\\FamilyTreeWeb2\\FamilyTreeWeb\\FamilyTreeWeb\\FamilyTreeWeb.DAL\\FamilyTreeWeb.DAL.csproj",
+        "packagesPath": "C:\\Users\\Alex\\.nuget\\packages\\",
+        "outputPath": "D:\\University\\Software Engineering 2\\FamilyTreeWeb2\\FamilyTreeWeb\\FamilyTreeWeb\\FamilyTreeWeb.DAL\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "D:\\VS 2022\\VS 2022 Tools, components, SDK\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Di\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Alex\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -138,34 +150,40 @@
         }
       }
     },
-    "D:\\Lab\\FamilyTreeWeb\\FamilyTreeWeb\\FamilyTreeWeb\\FamilyTreeWeb.domain.csproj": {
+    "D:\\University\\Software Engineering 2\\FamilyTreeWeb2\\FamilyTreeWeb\\FamilyTreeWeb\\FamilyTreeWeb\\FamilyTreeWeb.domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Lab\\FamilyTreeWeb\\FamilyTreeWeb\\FamilyTreeWeb\\FamilyTreeWeb.domain.csproj",
+        "projectUniqueName": "D:\\University\\Software Engineering 2\\FamilyTreeWeb2\\FamilyTreeWeb\\FamilyTreeWeb\\FamilyTreeWeb\\FamilyTreeWeb.domain.csproj",
         "projectName": "FamilyTreeWeb.domain",
-        "projectPath": "D:\\Lab\\FamilyTreeWeb\\FamilyTreeWeb\\FamilyTreeWeb\\FamilyTreeWeb.domain.csproj",
-        "packagesPath": "C:\\Users\\Di\\.nuget\\packages\\",
-        "outputPath": "D:\\Lab\\FamilyTreeWeb\\FamilyTreeWeb\\FamilyTreeWeb\\obj\\",
+        "projectPath": "D:\\University\\Software Engineering 2\\FamilyTreeWeb2\\FamilyTreeWeb\\FamilyTreeWeb\\FamilyTreeWeb\\FamilyTreeWeb.domain.csproj",
+        "packagesPath": "C:\\Users\\Alex\\.nuget\\packages\\",
+        "outputPath": "D:\\University\\Software Engineering 2\\FamilyTreeWeb2\\FamilyTreeWeb\\FamilyTreeWeb\\FamilyTreeWeb\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "D:\\VS 2022\\VS 2022 Tools, components, SDK\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Di\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Alex\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\Lab\\FamilyTreeWeb\\FamilyTreeWeb\\FamilyTreeWeb.BLL\\FamilyTreeWeb.BLL.csproj": {
-                "projectPath": "D:\\Lab\\FamilyTreeWeb\\FamilyTreeWeb\\FamilyTreeWeb.BLL\\FamilyTreeWeb.BLL.csproj"
+              "D:\\University\\Software Engineering 2\\FamilyTreeWeb2\\FamilyTreeWeb\\FamilyTreeWeb\\FamilyTreeWeb.BLL\\FamilyTreeWeb.BLL.csproj": {
+                "projectPath": "D:\\University\\Software Engineering 2\\FamilyTreeWeb2\\FamilyTreeWeb\\FamilyTreeWeb\\FamilyTreeWeb.BLL\\FamilyTreeWeb.BLL.csproj"
               },
-              "D:\\Lab\\FamilyTreeWeb\\FamilyTreeWeb\\FamilyTreeWeb.DAL\\FamilyTreeWeb.DAL.csproj": {
-                "projectPath": "D:\\Lab\\FamilyTreeWeb\\FamilyTreeWeb\\FamilyTreeWeb.DAL\\FamilyTreeWeb.DAL.csproj"
+              "D:\\University\\Software Engineering 2\\FamilyTreeWeb2\\FamilyTreeWeb\\FamilyTreeWeb\\FamilyTreeWeb.DAL\\FamilyTreeWeb.DAL.csproj": {
+                "projectPath": "D:\\University\\Software Engineering 2\\FamilyTreeWeb2\\FamilyTreeWeb\\FamilyTreeWeb\\FamilyTreeWeb.DAL\\FamilyTreeWeb.DAL.csproj"
               }
             }
           }

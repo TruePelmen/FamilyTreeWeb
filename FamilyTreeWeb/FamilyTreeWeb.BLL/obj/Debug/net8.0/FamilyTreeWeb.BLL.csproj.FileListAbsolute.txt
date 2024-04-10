@@ -21,3 +21,15 @@ D:\Lab\FamilyTreeWeb\FamilyTreeWeb\FamilyTreeWeb.BLL\obj\Debug\net8.0\FamilyTree
 D:\Lab\FamilyTreeWeb\FamilyTreeWeb\FamilyTreeWeb.BLL\obj\Debug\net8.0\refint\FamilyTreeWeb.BLL.dll
 D:\Lab\FamilyTreeWeb\FamilyTreeWeb\FamilyTreeWeb.BLL\obj\Debug\net8.0\FamilyTreeWeb.BLL.pdb
 D:\Lab\FamilyTreeWeb\FamilyTreeWeb\FamilyTreeWeb.BLL\obj\Debug\net8.0\ref\FamilyTreeWeb.BLL.dll
+D:\University\Software Engineering 2\FamilyTreeWeb2\FamilyTreeWeb\FamilyTreeWeb\FamilyTreeWeb.BLL\bin\Debug\net8.0\FamilyTreeWeb.BLL.deps.json
+D:\University\Software Engineering 2\FamilyTreeWeb2\FamilyTreeWeb\FamilyTreeWeb\FamilyTreeWeb.BLL\bin\Debug\net8.0\FamilyTreeWeb.BLL.dll
+D:\University\Software Engineering 2\FamilyTreeWeb2\FamilyTreeWeb\FamilyTreeWeb\FamilyTreeWeb.BLL\bin\Debug\net8.0\FamilyTreeWeb.BLL.pdb
+D:\University\Software Engineering 2\FamilyTreeWeb2\FamilyTreeWeb\FamilyTreeWeb\FamilyTreeWeb.BLL\obj\Debug\net8.0\FamilyTreeWeb.BLL.GeneratedMSBuildEditorConfig.editorconfig
+D:\University\Software Engineering 2\FamilyTreeWeb2\FamilyTreeWeb\FamilyTreeWeb\FamilyTreeWeb.BLL\obj\Debug\net8.0\FamilyTreeWeb.BLL.AssemblyInfoInputs.cache
+D:\University\Software Engineering 2\FamilyTreeWeb2\FamilyTreeWeb\FamilyTreeWeb\FamilyTreeWeb.BLL\obj\Debug\net8.0\FamilyTreeWeb.BLL.AssemblyInfo.cs
+D:\University\Software Engineering 2\FamilyTreeWeb2\FamilyTreeWeb\FamilyTreeWeb\FamilyTreeWeb.BLL\obj\Debug\net8.0\FamilyTreeWeb.BLL.csproj.CoreCompileInputs.cache
+D:\University\Software Engineering 2\FamilyTreeWeb2\FamilyTreeWeb\FamilyTreeWeb\FamilyTreeWeb.BLL\obj\Debug\net8.0\FamilyTreeWeb.BLL.sourcelink.json
+D:\University\Software Engineering 2\FamilyTreeWeb2\FamilyTreeWeb\FamilyTreeWeb\FamilyTreeWeb.BLL\obj\Debug\net8.0\FamilyTreeWeb.BLL.dll
+D:\University\Software Engineering 2\FamilyTreeWeb2\FamilyTreeWeb\FamilyTreeWeb\FamilyTreeWeb.BLL\obj\Debug\net8.0\refint\FamilyTreeWeb.BLL.dll
+D:\University\Software Engineering 2\FamilyTreeWeb2\FamilyTreeWeb\FamilyTreeWeb\FamilyTreeWeb.BLL\obj\Debug\net8.0\FamilyTreeWeb.BLL.pdb
+D:\University\Software Engineering 2\FamilyTreeWeb2\FamilyTreeWeb\FamilyTreeWeb\FamilyTreeWeb.BLL\obj\Debug\net8.0\ref\FamilyTreeWeb.BLL.dll
