@@ -1,0 +1,349 @@
+﻿@model FamilyTreeWeb.Models.Person
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Профіль особи</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #F5F5F5;
+        }
+
+        .profile-container {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+
+        .upper-section {
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 20px;
+        }
+
+        .main-photo img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .person-info {
+            padding-left: 20px;
+        }
+
+            .person-info h2 {
+                margin: 0;
+                color: #333;
+            }
+
+            .person-info p {
+                margin: 5px 0;
+                color: #666;
+            }
+
+        .menu {
+            background-color: #144509;
+            padding: 10px;
+            border-radius: 0 0 10px 10px;
+        }
+
+            .menu ul {
+                list-style-type: none;
+                padding: 0;
+                margin: 0;
+                display: flex;
+                justify-content: space-around;
+            }
+
+                .menu ul li {
+                    display: inline;
+                }
+
+                    .menu ul li a {
+                        text-decoration: none;
+                        color: #fff;
+                        padding: 5px 15px;
+                        border-radius: 5px;
+                        transition: all 0.3s ease;
+                    }
+
+                        .menu ul li a:hover {
+                            background-color: #4d5f4c;
+                        }
+
+        .section {
+            padding: 20px;
+            display: none;
+            animation: fadeIn 0.5s ease-in-out;
+        }
+
+            .section.visible {
+                display: block;
+            }
+
+        .tiles {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+        }
+
+        .tile.event {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+            .tile.event:hover {
+                transform: translateY(-5px);
+            }
+
+            .tile.event h4 {
+                margin-top: 0;
+                color: #144509;
+                font-size: 18px;
+                margin-bottom: 10px;
+            }
+
+            .tile.event p {
+                margin: 0;
+                color: #666666;
+                font-size: 14px;
+                line-height: 1.4;
+            }
+
+
+        .tile.relative {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            cursor: pointer;
+        }
+
+            .tile.relative:hover {
+                transform: translateY(-5px);
+            }
+
+            .tile.relative h4 {
+                margin-top: 0;
+                color: #144509;
+                font-size: 18px;
+                margin-bottom: 5px;
+            }
+
+            .tile.relative p {
+                margin: 0;
+                color: #666666;
+                font-size: 14px;
+                line-height: 1.4;
+            }
+
+            .tile.relative img {
+                width: 100%;
+                max-width: 100px;
+                height: auto;
+                border-radius: 50%;
+                margin-bottom: 10px;
+            }
+
+
+        .photo-gallery img {
+            width: 200px;
+            height: auto;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            margin: 10px;
+        }
+
+            .photo-gallery img:hover {
+                transform: scale(1.1);
+            }
+
+        
+    </style>
+</head>
+<body>
+    <div class="profile-container">
+        <div class="upper-section">
+            <div class="main-photo">
+                @if (Model.MainPhoto != null)
+				{
+                    <img src="@Model.MainPhoto.FilePath" alt="Фото особи" />
+                }
+            </div>
+            <div class="person-info">
+                <h2>@Model.FullName</h2>
+                @if (Model.MaidenName != "")
+                {
+                    <p>Дівоча фамілія: @Model.MaidenName</p>
+                }
+                @if (Model.OtherNameVariants != "")
+                {
+                    <p>Інші варіанти імені: @Model.OtherNameVariants</p>
+                }
+
+                @if (Model.BirthDate != null)
+                {
+                    <p>Дата народження: @Model.BirthDate</p>
+                }
+
+                @if (Model.BirthPlace != "")
+                {
+                    <p>Місце народження: @Model.BirthPlace</p>
+                }
+
+                @if (Model.DeathDate != null)
+                {
+                    <p>Дата смерті: @Model.DeathDate</p>
+                }
+
+                @if (Model.DeathPlace != "")
+                {
+                    <p>Місце смерті: @Model.DeathPlace</p>
+                }
+            </div>
+        </div>
+
+        <div class="menu">
+            <ul>
+                <li><a href="#" onclick="showSection('events')">Події</a></li>
+                <li><a href="#" onclick="showSection('photos')">Фото</a></li>
+                <li><a href="#" onclick="showSection('relatives')">Найближчі родичі</a></li>
+            </ul>
+        </div>
+
+        <div id="events" class="section visible">
+            <h3>Події</h3>
+            <div class="tiles event">
+                @foreach (var e in Model.Events)
+                {
+                    <div class="tile event">
+                        <h4>@e.Type</h4>
+                        <p>Дата: @e.EventDate</p>
+                        <p>Місце: @e.EventPlace</p>
+                        <p>Опис: @e.Description</p>
+                    </div>
+                }
+            </div>
+        </div>
+
+        <div id="photos" class="section">
+            <h3>Фото</h3>
+            <div class="photo-gallery">
+                @foreach (var photo in Model.Photos)
+                {
+					<img src="@photo.FilePath" alt="Фото" onclick="window.location.href='@Url.Action("Details", "Photo", new { id = photo.Id})'" />
+                }
+            </div>
+        </div>
+
+        <div id="relatives" class="section">
+            <h3>Найближчі родичі</h3>
+            <div class="tiles relative">
+                @if (Model.Spouse != null)
+                {
+                    <div class="tile relative" onclick="window.location.href='@Url.Action("Profile", "Profile", new { id = Model.Spouse.Id })'">
+                        <h4>@GetRelativeStatusSpouse(Model.Spouse.Gender)</h4>
+                        @if (Model.Spouse.MainPhoto != null)
+						{
+							<img src="@Model.Spouse.MainPhoto.FilePath" alt="Фото чоловіка / дружини" />
+						}
+                        <p>@Model.Spouse.FullName</p>
+                    </div>
+                }
+
+                @if (Model.Father != null)
+                {
+                    <div class="tile relative" onclick="window.location.href='@Url.Action("Profile", "Profile", new { id = Model.Father.Id })'">
+                        <h4>Батько</h4>
+                        @if (Model.Father.MainPhoto != null)
+                        {
+                            <img src="@Model.Father.MainPhoto.FilePath" alt="Фото батька" />
+                        }
+                        <p>@Model.Father.FullName</p>
+                    </div>
+                }
+
+                @if (Model.Mother != null)
+                {
+                    <div class="tile relative" onclick="window.location.href='@Url.Action("Profile", "Profile", new { id = Model.Mother.Id })'">
+                        <h4>Мати</h4>
+                        @if (Model.Mother.MainPhoto != null)
+                        {
+                            <img src="@Model.Mother.MainPhoto.FilePath" alt="Фото матері" />
+                        }
+                        <p>@Model.Mother.FullName</p>
+                    </div>
+                }
+
+                @foreach (var child in Model.Children)
+                {
+                    <div class="tile relative" onclick="window.location.href='@Url.Action("Profile", "Profile", new { id = child.Id })'">
+                        <h4>@GetRelativeStatusFirst(child.Gender)</h4>
+                        @if (child.MainPhoto != null)
+                        {
+                            <img src="@child.MainPhoto.FilePath" alt="Фото сина / доньки" />
+                        }
+                        <p>@child.FullName</p>
+                    </div>
+                }
+
+                @foreach (var sibling in Model.Siblings)
+                {
+                    <div class="tile relative" onclick="window.location.href='@Url.Action("Profile", "Profile", new { id = sibling.Id })'">
+                        <h4>@GetRelativeStatusSibling(sibling.Gender)</h4>
+                        @if (sibling.MainPhoto != null)
+                        {
+                            <img src="@sibling.MainPhoto.FilePath" alt="Фото брата / сестри" />
+                        }
+                        <p>@sibling.FullName</p>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function showSection(sectionId) {
+            var sections = document.querySelectorAll('.section');
+            sections.forEach(function (section) {
+                section.classList.remove('visible');
+            });
+            document.getElementById(sectionId).classList.add('visible');
+        }
+
+        function showPhotoDetails(photoId) {
+            window.open(`/Photo/${photoId}`, '_blank');
+        }
+    </script>
+</body>
+</html>
+
+@functions {
+    string GetRelativeStatusFirst(string gender)
+    {
+        return gender == "male" ? "Син" : "Донька";
+    }
+
+    string GetRelativeStatusSibling(string gender)
+    {
+        return gender == "male" ? "Брат" : "Сестра";
+    }
+
+    string GetRelativeStatusSpouse(string gender)
+    {
+        return gender == "male" ? "Чоловік" : "Дружина";
+    }
+
+}

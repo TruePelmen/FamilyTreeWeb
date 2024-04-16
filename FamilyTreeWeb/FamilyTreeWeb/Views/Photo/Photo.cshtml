@@ -1,0 +1,88 @@
+﻿@model FamilyTreeWeb.Models.Photo
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Детальна інформація про фото</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        .photo-details {
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .photo {
+            flex: 1;
+            margin-right: 20px;
+        }
+
+            .photo img {
+                max-width: 100%;
+                height: auto;
+                border-radius: 10px;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            }
+
+        .details {
+            flex: 1;
+        }
+
+            .details h2 {
+                margin-top: 0;
+                color: #144509;
+            }
+
+            .details p {
+                margin: 5px 0;
+                color: #666666;
+            }
+
+            .details button {
+                background-color: #144509;
+                color: #ffffff;
+                padding: 10px 20px;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                transition: background-color 0.3s ease;
+            }
+
+                .details button:hover {
+                    background-color: #0d2f0b;
+                }
+    </style>
+</head>
+<body>
+    <div class="photo-details">
+        <div class="photo">
+            <img src="@Model.FilePath" alt="Фото" />
+        </div>
+        <div class="details">
+            <h2>Детальна інформація про фото</h2>
+            <p>Дата: @Model.Date</p>
+            <p>Місце: @Model.Place</p>
+            <p>Опис: @Model.Description</p>
+            <button onclick="editPhoto('@Model.Id')">Редагувати</button>
+            <button onclick="deletePhoto('@Model.Id')">Видалити</button>
+        </div>
+    </div>
+
+    <script>
+        function editPhoto(photoId) {
+            // Логіка для редагування фото
+        }
+
+        function deletePhoto(photoId) {
+            // Логіка для видалення фото
+        }
+    </script>
+</body>
+</html>
+
