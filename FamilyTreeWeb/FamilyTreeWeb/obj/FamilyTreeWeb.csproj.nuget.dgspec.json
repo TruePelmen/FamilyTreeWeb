@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\olesy\\Універ\\ПІ\\FamilyTreeWeb\\FamilyTreeWeb\\FamilyTreeWeb.csproj": {}
+    "C:\\Users\\olesy\\OneDrive\\Документи\\GitHub\\FamilyTreeWeb\\FamilyTreeWeb\\FamilyTreeWeb\\FamilyTreeWeb.csproj": {}
   },
   "projects": {
-    "C:\\Users\\olesy\\Універ\\ПІ\\FamilyTreeWeb\\FamilyTreeWeb\\FamilyTreeWeb.csproj": {
+    "C:\\Users\\olesy\\OneDrive\\Документи\\GitHub\\FamilyTreeWeb\\FamilyTreeWeb\\FamilyTreeWeb\\FamilyTreeWeb.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\olesy\\Універ\\ПІ\\FamilyTreeWeb\\FamilyTreeWeb\\FamilyTreeWeb.csproj",
+        "projectUniqueName": "C:\\Users\\olesy\\OneDrive\\Документи\\GitHub\\FamilyTreeWeb\\FamilyTreeWeb\\FamilyTreeWeb\\FamilyTreeWeb.csproj",
         "projectName": "FamilyTreeWeb",
-        "projectPath": "C:\\Users\\olesy\\Універ\\ПІ\\FamilyTreeWeb\\FamilyTreeWeb\\FamilyTreeWeb.csproj",
+        "projectPath": "C:\\Users\\olesy\\OneDrive\\Документи\\GitHub\\FamilyTreeWeb\\FamilyTreeWeb\\FamilyTreeWeb\\FamilyTreeWeb.csproj",
         "packagesPath": "C:\\Users\\olesy\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\olesy\\Універ\\ПІ\\FamilyTreeWeb\\FamilyTreeWeb\\obj\\",
+        "outputPath": "C:\\Users\\olesy\\OneDrive\\Документи\\GitHub\\FamilyTreeWeb\\FamilyTreeWeb\\FamilyTreeWeb\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\olesy\\AppData\\Roaming\\NuGet\\NuGet.Config",
