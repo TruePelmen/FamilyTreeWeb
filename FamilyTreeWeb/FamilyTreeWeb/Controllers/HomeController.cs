@@ -1,5 +1,7 @@
+using FamilyTreeWeb.Context;
 using FamilyTreeWeb.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using System.Diagnostics;
 
 namespace FamilyTreeWeb.Controllers
@@ -7,20 +9,19 @@ namespace FamilyTreeWeb.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
+        private readonly FamilyTreeDbContext _context;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(ILogger<HomeController> logger, FamilyTreeDbContext context)
         {
             _logger = logger;
+            _context = context;
         }
 
         public IActionResult Index()
         {
-            return View();
-        }
+            var publicTrees = _context.Trees.Where(tree => tree.Type == "public").ToList();
 
-        public IActionResult Privacy()
-        {
-            return View();
+            return View(publicTrees);
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

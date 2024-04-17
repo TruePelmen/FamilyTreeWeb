@@ -30,7 +30,7 @@
 
         public string? DeathPlace { get; set; }
 
-        public int TreeId { get; set; }
+        public int IdTree { get; set; }
 
         public virtual Tree Tree { get; set; } = null!;
 

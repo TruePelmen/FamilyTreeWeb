@@ -42,7 +42,6 @@
 
         .spacer-parent {
             height: 30px;
-            width: @GetLineWidth(Model.Children.Count)px;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -58,12 +57,22 @@
         .spacer-parent-big {
             width: 60px;
             height: 90px;
+            position: relative;
         }
 
         .line-parent-small {
             width: 50px;
             height: 1.5px;
             background-color: #000;
+            position: absolute;
+            top: 70%;
+            transform: translateY(-70%);
+        }
+
+        .line-parent-small-white {
+            width: 50px;
+            height: 1.5px;
+            background-color: #f5f5f5;
             position: absolute;
             top: 70%;
             transform: translateY(-70%);
@@ -110,7 +119,6 @@
 
         .line-child-h {
             height: 1.5px; /* Висота лінії */
-            width: @GetLineWidth(Model.Children.Count)px;
             background-color: #000; /* Колір лінії */
             position: absolute; /* Позиціонуємо абсолютно відносно батьківського контейнера */
             top: 50%; /* Розміщуємо лінію на вертикальному центрі */
@@ -243,9 +251,73 @@
                     object-fit: cover;
                 }
 
+        .navbar {
+            background-color: #144509 !important;
+        }
+
+        .navbar-brand {
+            color: #ffffff !important;
+            font-size: 2rem;
+        }
+
+        .round-button {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: #144509; /* Зелений колір */
+            border: none; /* Видаляємо рамку */
+            cursor: pointer; /* Змінюємо курсор на пальця на мобільних пристроях */
+            outline: none; /* Видаляємо зазначення при фокусі */
+            padding: 0; /* Видаляємо відступи */
+        }
+
+            /* Стилі для зображення плюса всередині кнопки */
+            .round-button img {
+                width: 20px; /* Ширина зображення плюса */
+                height: 20px; /* Висота зображення плюса */
+            }
+
+            /* При наведенні миші змінюємо колір кнопки */
+            .round-button:hover {
+                background-color: #45a049; /* Темно-зелений колір */
+            }
+
+        .small-button {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .central-button {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
     </style>
 </head>
 <body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#"></a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="@Url.Action("Index", "Home")">Головна</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="@Url.Action("Login", "Account")">Увійти</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="@Url.Action("Register", "Account")">Зареєструватися</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
     <div class="tree">
         <div class="parent-container">
             <div class="card small" @if (MaleFocus() != null && MaleFocus().Father != null)
@@ -267,6 +339,13 @@
                         }
                     </div>
                 }
+                else
+				{
+                            <button class="round-button small-button">
+                            <img src="https://previews.dropbox.com/p/thumb/ACMEs52nSjRzUEJd7CQp3aoa5J8_bAYspanlY-yCQ8kisvtCE7LA2TepffCXL8jM_G_FBEiIzJuEC87HMW_EE-dyXqgo95V6Z2NmuRbVQSQmkLQSYE8D177ELigGU9iO-pEtjPsh_ercfcSRoK-T1h6FDMCoZdK-6Abb12z3jR3h0Zt4yXJNJUxLNurDouxkZn-pWVOpv2E468K9tBaff985QpC74Jra4NAbj3n2dsNuNlnIVsecZfT7z8OZ4SZDMt-QOVLJrWCCkCy3gSqt-iJKKBaKTOAsaXUshVTzuHS0THKGtC0-3_ZMuySQrk_TB7Cs3PF4IQBEypWuTtmCTh6z/p.png" alt="Plus Icon">
+                        </button> 
+                 }
+                           
             </div>
 
             <div class="spacer-parent-small">
@@ -293,6 +372,12 @@
                         }
                     </div>
                 }
+                else
+                {
+                                <button class="round-button small-button">
+                                <img src="https://previews.dropbox.com/p/thumb/ACMEs52nSjRzUEJd7CQp3aoa5J8_bAYspanlY-yCQ8kisvtCE7LA2TepffCXL8jM_G_FBEiIzJuEC87HMW_EE-dyXqgo95V6Z2NmuRbVQSQmkLQSYE8D177ELigGU9iO-pEtjPsh_ercfcSRoK-T1h6FDMCoZdK-6Abb12z3jR3h0Zt4yXJNJUxLNurDouxkZn-pWVOpv2E468K9tBaff985QpC74Jra4NAbj3n2dsNuNlnIVsecZfT7z8OZ4SZDMt-QOVLJrWCCkCy3gSqt-iJKKBaKTOAsaXUshVTzuHS0THKGtC0-3_ZMuySQrk_TB7Cs3PF4IQBEypWuTtmCTh6z/p.png" alt="Plus Icon">
+                            </button>
+                }
             </div>
 
             <div class="spacer-parent-big"></div>
@@ -315,6 +400,12 @@
                             <img src="https://previews.dropbox.com/p/thumb/ACPZLwpFWBfdQoHAVoGUbuX5qRZ6hNiJSVqjy589ofKXo1BErpb0Et1ahDdm2WkOtuZAwHI87nAkPLaoarM-52g8nT1VgommMyG_ZhXZbUh0jfhOLi9SsKuC7vpekCAB2B3dbu18c801ui4FvhslEl4Ri2vRzLccxYNoYWeAfphNGFyBolSCFrvKTfiK1Ehf78n0dLLulmyyfE5-26lFWeILd9t1TjdcPKoWR-DMDXCGJ659qPPtE4XKQuW-din5H9vasQ_5I-5PIvrIfw7kJjR7OX_EOoslJ-lhZGSJ0InfbcpqBpLUTYNkiODgubgzywAiSbj7iwLrl2eZlstjfKwu/p.png" />
                         }
                     </div>
+                }
+                else
+                {
+                                <button class="round-button small-button">
+                                <img src="https://previews.dropbox.com/p/thumb/ACMEs52nSjRzUEJd7CQp3aoa5J8_bAYspanlY-yCQ8kisvtCE7LA2TepffCXL8jM_G_FBEiIzJuEC87HMW_EE-dyXqgo95V6Z2NmuRbVQSQmkLQSYE8D177ELigGU9iO-pEtjPsh_ercfcSRoK-T1h6FDMCoZdK-6Abb12z3jR3h0Zt4yXJNJUxLNurDouxkZn-pWVOpv2E468K9tBaff985QpC74Jra4NAbj3n2dsNuNlnIVsecZfT7z8OZ4SZDMt-QOVLJrWCCkCy3gSqt-iJKKBaKTOAsaXUshVTzuHS0THKGtC0-3_ZMuySQrk_TB7Cs3PF4IQBEypWuTtmCTh6z/p.png" alt="Plus Icon">
+                            </button>
                 }
             </div>
 
@@ -341,6 +432,12 @@
                              <img src="https://previews.dropbox.com/p/thumb/ACN_uIxNmUGGgzqOTjpVW5w-Dd-369Zqgw1WqpBd2k4_pBiMydxeArjS-T5Ix7F9P0G17gOZL0GzHmUGbiIwDAKzqmtXk01zR5L85-AykSDVzw54Lp-ybhPvOv4wBpQd-cdwi-ZMr-TIFxQQnl3x9YG0Vfj2cNnyY7XUmFBMn5pPF5rAXVgtM0DjEHyJU2NEH94g2AFMtkqW_oYmuyhq3d8A7WwDLXAlW-9oS7IKpsfmTD_XyofSn4X31GUlo71OrQC1JbAOJCK6CP7zqqLifgARFMzYH4faLH22ZGuJwPq1P6W1Syp-g4kF84PtVYfR3Xkbull78NFI3HGY3p97caYb/p.png" />
                         }
                     </div>
+                }
+                else
+                {
+                                <button class="round-button small-button">
+                                <img src="https://previews.dropbox.com/p/thumb/ACMEs52nSjRzUEJd7CQp3aoa5J8_bAYspanlY-yCQ8kisvtCE7LA2TepffCXL8jM_G_FBEiIzJuEC87HMW_EE-dyXqgo95V6Z2NmuRbVQSQmkLQSYE8D177ELigGU9iO-pEtjPsh_ercfcSRoK-T1h6FDMCoZdK-6Abb12z3jR3h0Zt4yXJNJUxLNurDouxkZn-pWVOpv2E468K9tBaff985QpC74Jra4NAbj3n2dsNuNlnIVsecZfT7z8OZ4SZDMt-QOVLJrWCCkCy3gSqt-iJKKBaKTOAsaXUshVTzuHS0THKGtC0-3_ZMuySQrk_TB7Cs3PF4IQBEypWuTtmCTh6z/p.png" alt="Plus Icon">
+                            </button>
                 }
             </div>
         </div>
@@ -380,6 +477,12 @@
                         <button>Видалити</button>
                     </div>
                 }
+                else
+                {
+                    <button class="round-button central-button">
+                        <img src="https://previews.dropbox.com/p/thumb/ACMEs52nSjRzUEJd7CQp3aoa5J8_bAYspanlY-yCQ8kisvtCE7LA2TepffCXL8jM_G_FBEiIzJuEC87HMW_EE-dyXqgo95V6Z2NmuRbVQSQmkLQSYE8D177ELigGU9iO-pEtjPsh_ercfcSRoK-T1h6FDMCoZdK-6Abb12z3jR3h0Zt4yXJNJUxLNurDouxkZn-pWVOpv2E468K9tBaff985QpC74Jra4NAbj3n2dsNuNlnIVsecZfT7z8OZ4SZDMt-QOVLJrWCCkCy3gSqt-iJKKBaKTOAsaXUshVTzuHS0THKGtC0-3_ZMuySQrk_TB7Cs3PF4IQBEypWuTtmCTh6z/p.png" alt="Plus Icon">
+                    </button>
+                }
             </div>
 
             <!-- Проміжок між карточками -->
@@ -418,12 +521,18 @@
                         <button>Видалити</button>
                     </div>
                 }
+                else
+                {
+                    <button class="round-button central-button">
+                        <img src="https://previews.dropbox.com/p/thumb/ACMEs52nSjRzUEJd7CQp3aoa5J8_bAYspanlY-yCQ8kisvtCE7LA2TepffCXL8jM_G_FBEiIzJuEC87HMW_EE-dyXqgo95V6Z2NmuRbVQSQmkLQSYE8D177ELigGU9iO-pEtjPsh_ercfcSRoK-T1h6FDMCoZdK-6Abb12z3jR3h0Zt4yXJNJUxLNurDouxkZn-pWVOpv2E468K9tBaff985QpC74Jra4NAbj3n2dsNuNlnIVsecZfT7z8OZ4SZDMt-QOVLJrWCCkCy3gSqt-iJKKBaKTOAsaXUshVTzuHS0THKGtC0-3_ZMuySQrk_TB7Cs3PF4IQBEypWuTtmCTh6z/p.png" alt="Plus Icon">
+                    </button>
+                }
             </div>
             </div>
         </div>
 
         <div class="spacer-parent">
-            <div class="line-child-h"></div>
+        <div id="line-child-h-id" class="line-child-h"></div>
         </div>
         <div class="children-container">
             @foreach(var child in Model.Children)
@@ -450,35 +559,49 @@
 				    </div>
                     
                 </div>
-                <div class="spacer-parent-big"></div>
+                <div id="spacer" class="spacer-parent-big">
+                    <div class="line-parent-small-white"></div>
+                </div>
 			}
 
             <div class="child-card">
 					<div class="line-child-v"></div>
                     <div class="card small">
-                        
+                
+                <button class="round-button small-button">
+                    <img src="https://previews.dropbox.com/p/thumb/ACMEs52nSjRzUEJd7CQp3aoa5J8_bAYspanlY-yCQ8kisvtCE7LA2TepffCXL8jM_G_FBEiIzJuEC87HMW_EE-dyXqgo95V6Z2NmuRbVQSQmkLQSYE8D177ELigGU9iO-pEtjPsh_ercfcSRoK-T1h6FDMCoZdK-6Abb12z3jR3h0Zt4yXJNJUxLNurDouxkZn-pWVOpv2E468K9tBaff985QpC74Jra4NAbj3n2dsNuNlnIVsecZfT7z8OZ4SZDMt-QOVLJrWCCkCy3gSqt-iJKKBaKTOAsaXUshVTzuHS0THKGtC0-3_ZMuySQrk_TB7Cs3PF4IQBEypWuTtmCTh6z/p.png" alt="Plus Icon">
+                </button>
+                
 					    </div>
 				    </div>
                     
                 </div>
         </div>
     </div>
+
+    <script>
+        // Функція, яка оновлює ширину лінії
+        function updateLineWidth(count) {
+            var spacerWidth = document.getElementById("spacer").offsetWidth;
+            var lineWidth = count * 190 + count * spacerWidth;
+
+            // Знайдемо елемент лінії за id
+            var lineElement = document.getElementById("line-child-h-id");
+
+            // Встановимо ширину лінії
+            lineElement.style.width = lineWidth + "px";
+        }
+
+        window.onload = function () {
+            var childrenCount = @Model.Children.Count;
+
+            // Оновлюємо ширину лінії з використанням кількості дітей
+            updateLineWidth(childrenCount);
+        };
+    </script>
 </body>
 </html>
 @functions {
-
-    public double GetLineWidth(int count)
-    {
-
-        if(count == 0)
-        {
-            return 0;
-        }
-        else
-        {
-            return (count * 190 + count * 60);
-        }
-    }
 
     public Person MaleFocus()
     {

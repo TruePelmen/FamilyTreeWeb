@@ -22,9 +22,9 @@
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Person>()
-                .HasOne(p =>p.Tree)
+                .HasOne(p => p.Tree)
                 .WithMany(t => t.People)
-                .HasForeignKey(p => p.TreeId);
+                .HasForeignKey(p => p.IdTree);
 
             modelBuilder.Entity<Relationship>()
                 .HasOne(r => r.PersonId1Navigation)
@@ -60,6 +60,7 @@
                 .HasOne(sr => sr.Person)
                 .WithMany(e => e.Photos)
                 .HasForeignKey(sr => sr.PersonId);
+
         }
     }
 
