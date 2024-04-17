@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\olesy\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\GitHub\\FamilyTreeWeb\\FamilyTreeWeb\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{32B78B0F-7945-429C-8843-C3FBE41DE6F7}|FamilyTreeWeb\\FamilyTreeWeb.csproj|c:\\users\\olesy\\onedrive\\\u0434\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\github\\familytreeweb\\familytreeweb\\familytreeweb\\views\\tree\\viewtree.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{32B78B0F-7945-429C-8843-C3FBE41DE6F7}|FamilyTreeWeb\\FamilyTreeWeb.csproj|solutionrelative:familytreeweb\\views\\tree\\viewtree.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{32B78B0F-7945-429C-8843-C3FBE41DE6F7}|FamilyTreeWeb\\FamilyTreeWeb.csproj|c:\\users\\olesy\\onedrive\\\u0434\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\github\\familytreeweb\\familytreeweb\\familytreeweb\\views\\profile\\profile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{32B78B0F-7945-429C-8843-C3FBE41DE6F7}|FamilyTreeWeb\\FamilyTreeWeb.csproj|solutionrelative:familytreeweb\\views\\profile\\profile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32B78B0F-7945-429C-8843-C3FBE41DE6F7}|FamilyTreeWeb\\FamilyTreeWeb.csproj|c:\\users\\olesy\\onedrive\\\u0434\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\github\\familytreeweb\\familytreeweb\\familytreeweb\\views\\tree\\viewtree.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{32B78B0F-7945-429C-8843-C3FBE41DE6F7}|FamilyTreeWeb\\FamilyTreeWeb.csproj|solutionrelative:familytreeweb\\views\\tree\\viewtree.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{32B78B0F-7945-429C-8843-C3FBE41DE6F7}|FamilyTreeWeb\\FamilyTreeWeb.csproj|c:\\users\\olesy\\onedrive\\\u0434\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\github\\familytreeweb\\familytreeweb\\familytreeweb\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -129,7 +129,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Bookmark",
@@ -148,10 +148,6 @@
               "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
-            },
-            {
               "$type": "Document",
               "DocumentIndex": 9,
               "Title": "FamilyTreeDbContextModelSnapshot.cs",
@@ -161,8 +157,7 @@
               "RelativeToolTip": "FamilyTreeWeb\\Data\\Migrations\\FamilyTreeDbContextModelSnapshot.cs",
               "ViewState": "AQIAAEwAAAAAAAAAAAAAAGAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-16T08:27:09.298Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-16T08:27:09.298Z"
             },
             {
               "$type": "Document",
@@ -174,8 +169,7 @@
               "RelativeToolTip": "FamilyTreeWeb\\Controllers\\TreeController.cs",
               "ViewState": "AQIAAAIAAAAAAAAAAAAkwBAAAAAcAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-16T08:12:43.015Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-16T08:12:43.015Z"
             },
             {
               "$type": "Document",
@@ -187,12 +181,11 @@
               "RelativeToolTip": "FamilyTreeWeb\\Controllers\\HomeController.cs",
               "ViewState": "AQIAAAYAAAAAAAAAAAAAABQAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-15T14:21:03.087Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-15T14:21:03.087Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "ViewTree.cshtml",
               "DocumentMoniker": "C:\\Users\\olesy\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\GitHub\\FamilyTreeWeb\\FamilyTreeWeb\\FamilyTreeWeb\\Views\\Tree\\ViewTree.cshtml",
               "RelativeDocumentMoniker": "FamilyTreeWeb\\Views\\Tree\\ViewTree.cshtml",
@@ -200,8 +193,7 @@
               "RelativeToolTip": "FamilyTreeWeb\\Views\\Tree\\ViewTree.cshtml",
               "ViewState": "AQIAAAkBAAAAAAAAAAAjwCQBAAAZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-16T08:16:39.177Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-16T08:16:39.177Z"
             },
             {
               "$type": "Document",
@@ -213,21 +205,24 @@
               "RelativeToolTip": "FamilyTreeWeb\\Views\\Home\\Index.cshtml",
               "ViewState": "AQIAAHIAAAAAAAAAAAAjwIIAAACFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-15T14:28:49.259Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-15T14:28:49.259Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Profile.cshtml",
               "DocumentMoniker": "C:\\Users\\olesy\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\GitHub\\FamilyTreeWeb\\FamilyTreeWeb\\FamilyTreeWeb\\Views\\Profile\\Profile.cshtml",
               "RelativeDocumentMoniker": "FamilyTreeWeb\\Views\\Profile\\Profile.cshtml",
               "ToolTip": "C:\\Users\\olesy\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\GitHub\\FamilyTreeWeb\\FamilyTreeWeb\\FamilyTreeWeb\\Views\\Profile\\Profile.cshtml",
               "RelativeToolTip": "FamilyTreeWeb\\Views\\Profile\\Profile.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAOoAAAAAAAAA",
+              "ViewState": "AQIAAMwAAAAAAAAAAAAjwNUAAAAmAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-04-15T16:32:22.528Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
             },
             {
               "$type": "Document",
@@ -239,8 +234,7 @@
               "RelativeToolTip": "FamilyTreeWeb\\Models\\Tree.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAxAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-15T13:57:14.473Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-15T13:57:14.473Z"
             },
             {
               "$type": "Document",
@@ -252,8 +246,7 @@
               "RelativeToolTip": "FamilyTreeWeb\\Models\\Person.cs",
               "ViewState": "AQIAADsAAAAAAAAAAAAAAFUAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-15T13:39:20.706Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-15T13:39:20.706Z"
             },
             {
               "$type": "Document",
@@ -265,8 +258,7 @@
               "RelativeToolTip": "FamilyTreeWeb\\Context\\FamilyTreeContext.cs",
               "ViewState": "AQIAACEAAAAAAAAAAAAAwD0AAAAyAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-15T13:38:10.712Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-15T13:38:10.712Z"
             },
             {
               "$type": "Document",
@@ -278,8 +270,7 @@
               "RelativeToolTip": "FamilyTreeWeb\\Models\\Permission.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAwAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-15T13:58:19.028Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-15T13:58:19.028Z"
             },
             {
               "$type": "Document",
@@ -291,8 +282,7 @@
               "RelativeToolTip": "FamilyTreeWeb\\Data\\Migrations\\20240415135911_InitialMigration.cs",
               "ViewState": "AQIAAFEAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-15T13:59:11.535Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-15T13:59:11.535Z"
             },
             {
               "$type": "Document",
@@ -304,8 +294,7 @@
               "RelativeToolTip": "FamilyTreeWeb\\Controllers\\ProfileController.cs",
               "ViewState": "AQIAAAwAAAAAAAAAAAAswAwAAAAwAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-15T14:35:59.387Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-15T14:35:59.387Z"
             },
             {
               "$type": "Document",
@@ -317,8 +306,7 @@
               "RelativeToolTip": "FamilyTreeWeb\\Views\\Profile\\AddEvent.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAApAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-15T23:04:28.093Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-15T23:04:28.093Z"
             },
             {
               "$type": "Document",
@@ -330,8 +318,7 @@
               "RelativeToolTip": "FamilyTreeWeb\\Controllers\\PhotoController.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-15T23:47:21.135Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-15T23:47:21.135Z"
             },
             {
               "$type": "Document",
@@ -343,8 +330,7 @@
               "RelativeToolTip": "FamilyTreeWeb\\Views\\Photo\\Photo.cshtml",
               "ViewState": "AQIAAA8AAAAAAAAAAAAkwAsAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-15T23:50:51.183Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-15T23:50:51.183Z"
             },
             {
               "$type": "Document",
@@ -356,8 +342,7 @@
               "RelativeToolTip": "FamilyTreeWeb\\Views\\_ViewImports.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-15T14:44:22.763Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-15T14:44:22.763Z"
             },
             {
               "$type": "Document",
@@ -369,8 +354,7 @@
               "RelativeToolTip": "FamilyTreeWeb\\Views\\Shared\\_Layout.cshtml",
               "ViewState": "AQIAAAcAAAAAAAAAAAAAwAoAAAAGAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-15T14:29:02.62Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-15T14:29:02.62Z"
             },
             {
               "$type": "Document",
