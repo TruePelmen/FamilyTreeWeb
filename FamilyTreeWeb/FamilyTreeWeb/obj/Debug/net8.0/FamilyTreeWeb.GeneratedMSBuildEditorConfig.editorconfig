@@ -9,51 +9,59 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = FamilyTreeWeb
 build_property.RootNamespace = FamilyTreeWeb
-build_property.ProjectDir = C:\Users\olesy\OneDrive\Документи\GitHub\FamilyTreeWeb\FamilyTreeWeb\FamilyTreeWeb\
+build_property.ProjectDir = D:\University\Software Engineering 2\FamilyTree17.04\FamilyTreeWeb\FamilyTreeWeb\FamilyTreeWeb\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\olesy\OneDrive\Документи\GitHub\FamilyTreeWeb\FamilyTreeWeb\FamilyTreeWeb
+build_property.MSBuildProjectDirectory = D:\University\Software Engineering 2\FamilyTree17.04\FamilyTreeWeb\FamilyTreeWeb\FamilyTreeWeb
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/olesy/OneDrive/Документи/GitHub/FamilyTreeWeb/FamilyTreeWeb/FamilyTreeWeb/Views/Home/Index.cshtml]
+[D:/University/Software Engineering 2/FamilyTree17.04/FamilyTreeWeb/FamilyTreeWeb/FamilyTreeWeb/Views/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/University/Software Engineering 2/FamilyTree17.04/FamilyTreeWeb/FamilyTreeWeb/FamilyTreeWeb/Views/Account/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/University/Software Engineering 2/FamilyTree17.04/FamilyTreeWeb/FamilyTreeWeb/FamilyTreeWeb/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/olesy/OneDrive/Документи/GitHub/FamilyTreeWeb/FamilyTreeWeb/FamilyTreeWeb/Views/Photo/Photo.cshtml]
+[D:/University/Software Engineering 2/FamilyTree17.04/FamilyTreeWeb/FamilyTreeWeb/FamilyTreeWeb/Views/Photo/Photo.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGhvdG9cUGhvdG8uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/olesy/OneDrive/Документи/GitHub/FamilyTreeWeb/FamilyTreeWeb/FamilyTreeWeb/Views/Profile/AddEvent.cshtml]
+[D:/University/Software Engineering 2/FamilyTree17.04/FamilyTreeWeb/FamilyTreeWeb/FamilyTreeWeb/Views/Profile/AddEvent.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZmlsZVxBZGRFdmVudC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/olesy/OneDrive/Документи/GitHub/FamilyTreeWeb/FamilyTreeWeb/FamilyTreeWeb/Views/Profile/Profile.cshtml]
+[D:/University/Software Engineering 2/FamilyTree17.04/FamilyTreeWeb/FamilyTreeWeb/FamilyTreeWeb/Views/Profile/Profile.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZmlsZVxQcm9maWxlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/olesy/OneDrive/Документи/GitHub/FamilyTreeWeb/FamilyTreeWeb/FamilyTreeWeb/Views/Shared/Error.cshtml]
+[D:/University/Software Engineering 2/FamilyTree17.04/FamilyTreeWeb/FamilyTreeWeb/FamilyTreeWeb/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/olesy/OneDrive/Документи/GitHub/FamilyTreeWeb/FamilyTreeWeb/FamilyTreeWeb/Views/Shared/_ValidationScriptsPartial.cshtml]
+[D:/University/Software Engineering 2/FamilyTree17.04/FamilyTreeWeb/FamilyTreeWeb/FamilyTreeWeb/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/olesy/OneDrive/Документи/GitHub/FamilyTreeWeb/FamilyTreeWeb/FamilyTreeWeb/Views/Tree/ViewTree.cshtml]
+[D:/University/Software Engineering 2/FamilyTree17.04/FamilyTreeWeb/FamilyTreeWeb/FamilyTreeWeb/Views/Tree/ViewTree.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJlZVxWaWV3VHJlZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/olesy/OneDrive/Документи/GitHub/FamilyTreeWeb/FamilyTreeWeb/FamilyTreeWeb/Views/_ViewImports.cshtml]
+[D:/University/Software Engineering 2/FamilyTree17.04/FamilyTreeWeb/FamilyTreeWeb/FamilyTreeWeb/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/olesy/OneDrive/Документи/GitHub/FamilyTreeWeb/FamilyTreeWeb/FamilyTreeWeb/Views/_ViewStart.cshtml]
+[D:/University/Software Engineering 2/FamilyTree17.04/FamilyTreeWeb/FamilyTreeWeb/FamilyTreeWeb/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/olesy/OneDrive/Документи/GitHub/FamilyTreeWeb/FamilyTreeWeb/FamilyTreeWeb/Views/Shared/_Layout.cshtml]
+[D:/University/Software Engineering 2/FamilyTree17.04/FamilyTreeWeb/FamilyTreeWeb/FamilyTreeWeb/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-psfo8rjejg
