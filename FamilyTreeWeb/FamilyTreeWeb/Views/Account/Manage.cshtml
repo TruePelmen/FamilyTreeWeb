@@ -1,0 +1,17 @@
+﻿@{
+    ViewData["Title"] = "Керування акаунтом";
+}
+
+<h1>Керування акаунтом</h1>
+
+<div class="container">
+    <p>
+        <a href="@Url.Action("EditAccount", "Account")" class="btn btn-primary btn-block">Редагувати акаунт</a>
+    </p>
+    <p>
+        <a href="@Url.Action("DeleteAccount", "Account")" class="btn btn-danger btn-block">Видалити акаунт</a>
+    </p>
+    <p>
+        <a href="@Url.Action("Logout", "Account")" class="btn btn-secondary btn-block">Вийти</a>
+    </p>
+</div>

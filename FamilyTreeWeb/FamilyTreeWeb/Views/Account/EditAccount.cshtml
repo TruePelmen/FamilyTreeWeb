@@ -1,0 +1,21 @@
+﻿@model FamilyTreeWeb.Models.User
+
+@{
+    ViewData["Title"] = "Edit Account";
+}
+
+<h1>Edit Your Account</h1>
+
+<form method="post">
+    <div class="form-group">
+        <label asp-for="Login">Login:</label>
+        <input asp-for="Login" class="form-control" />
+        <span asp-validation-for="Login" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Password">Password:</label>
+        <input asp-for="Password" type="password" class="form-control" />
+        <span asp-validation-for="Password" class="text-danger"></span>
+    </div>
+    <button type="submit" class="btn btn-primary">Save Changes</button>
+</form>

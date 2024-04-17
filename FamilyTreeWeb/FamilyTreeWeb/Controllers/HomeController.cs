@@ -24,6 +24,13 @@ namespace FamilyTreeWeb.Controllers
             return View(publicTrees);
         }
 
+        public IActionResult IndexAuth()
+        {
+            var publicTrees = _context.Trees.Where(tree => tree.Type == "public").ToList();
+
+            return View(publicTrees);
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {

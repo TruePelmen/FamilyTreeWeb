@@ -18,8 +18,16 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = D:\University\Software Engineering 2\FamilyTree17.04\FamilyTreeWeb\FamilyTreeWeb\FamilyTreeWeb
 build_property._RazorSourceGeneratorDebug = 
 
+[D:/University/Software Engineering 2/FamilyTree17.04/FamilyTreeWeb/FamilyTreeWeb/FamilyTreeWeb/Views/Account/EditAccount.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxFZGl0QWNjb3VudC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/University/Software Engineering 2/FamilyTree17.04/FamilyTreeWeb/FamilyTreeWeb/FamilyTreeWeb/Views/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/University/Software Engineering 2/FamilyTree17.04/FamilyTreeWeb/FamilyTreeWeb/FamilyTreeWeb/Views/Account/Manage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxNYW5hZ2UuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/University/Software Engineering 2/FamilyTree17.04/FamilyTreeWeb/FamilyTreeWeb/FamilyTreeWeb/Views/Account/Register.cshtml]
@@ -28,6 +36,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [D:/University/Software Engineering 2/FamilyTree17.04/FamilyTreeWeb/FamilyTreeWeb/FamilyTreeWeb/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/University/Software Engineering 2/FamilyTree17.04/FamilyTreeWeb/FamilyTreeWeb/FamilyTreeWeb/Views/Home/IndexAuth.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleEF1dGguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/University/Software Engineering 2/FamilyTree17.04/FamilyTreeWeb/FamilyTreeWeb/FamilyTreeWeb/Views/Photo/Photo.cshtml]

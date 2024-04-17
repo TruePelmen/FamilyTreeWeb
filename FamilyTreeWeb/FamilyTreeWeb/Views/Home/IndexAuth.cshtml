@@ -1,0 +1,168 @@
+﻿@{
+    ViewBag.Title = "Головна сторінка";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Сторінка ведення родоводу</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+
+        .navbar {
+            background-color: #144509 !important;
+        }
+
+        .navbar-brand {
+            color: #ffffff !important;
+            font-size: 2rem;
+        }
+
+        .jumbotron {
+            background-image: url('https://previews.dropbox.com/p/thumb/ACMS4WLBawxbJg9BbyASiNzCOe1CJPfm4GMNDbtldJDo7bvUPjZKxlCNUzHiU8AZ6Z-F-NwWDOLhVzCnwqmDStMWy-jv0bKuJjwsrwXdQXDZRxiW-X-Hr3LC-GC0e4oq48ff_kJKSauj6miquAboP0BIiIQYcPqpvbBXjKJkyPOi0wP5TSJAjM9o5xCShueeWnKew1F11FZtD67trMjM5HF8owddwHGv9U9oXITElO9GhvB7O8xtpC2QhU5woXg1Xfj3anla2MOKjx3IdDoVrwT-1EgAi3LtJkWXtwBw2FfSCpKtefnJ5V0r07y5TGjg0mIC0BE7A63O6EWypAqpREJ7/p.jpeg');
+            background-size: cover;
+            background-position: center;
+            color: #ffffff;
+            position: relative;
+            overflow: hidden;
+            margin-bottom: 30px;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        .jumbotron-content {
+            position: relative;
+            z-index: 1;
+            padding: 100px 0;
+            text-align: center;
+        }
+
+        .jumbotron h1 {
+            font-size: 4rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .lead {
+            font-size: 1.5rem;
+        }
+
+        .tree-container {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+
+        .tree-item {
+            border: 1px solid #dee2e6;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            padding: 20px;
+            background-color: #fff;
+            transition: transform 0.3s ease;
+        }
+
+            .tree-item:hover {
+                transform: scale(1.02);
+            }
+
+        .tree-name {
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .tree-description {
+            font-size: 1rem;
+        }
+
+        .search-form {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#"></a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="@Url.Action("Manage", "Account")">Керувати аккаунтом</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="@Url.Action("Logout", "Account")">Вийти</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="jumbotron">
+            <div class="overlay"></div>
+            <div class="jumbotron-content">
+                <h1 class="display-3">Дерево Роду</h1>
+                <p class="lead">Сплітаймо нитки нашого минулого</p>
+            </div>
+        </div>
+
+        <h1>Публічні дерева</h1>
+        <form class="search-form">
+            <div class="form-group">
+                <input type="text" class="form-control" id="searchInput" placeholder="Пошук за назвою дерева">
+            </div>
+        </form>
+
+        <div class="tree-container">
+            @foreach (var tree in Model)
+            {
+                <div class="tree-item" onclick="window.location.href='@Url.Action("ViewTree", "Tree", new { id = tree.PrimaryPerson})'">
+                    <h2 class="tree-name">@tree.Name</h2>
+                </div>
+            }
+        </div>
+
+        <h1>Мої дерева</h1>
+        <form class="search-form">
+            <div class="form-group">
+                <input type="text" class="form-control" id="searchInput" placeholder="Пошук за назвою дерева">
+            </div>
+        </form>
+
+        <div class="tree-container">
+            @foreach (var tree in Model)
+            {
+                <div class="tree-item" onclick="window.location.href='@Url.Action("ViewTree", "Tree", new { id = tree.PrimaryPerson})'">
+                    <h2 class="tree-name">@tree.Name</h2>
+                </div>
+            }
+        </div>
+
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#searchInput").on("keyup", function () {
+                var value = $(this).val().toLowerCase();
+                $(".tree-item").filter(function () {
+                    $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+                });
+            });
+        });
+    </script>
+</body>
+</html>
