@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Дерево родини</title>
+    <!-- Додайте стилі та інші метатеги, які потрібні вам -->
+</head>
+<body>
+    <!-- Вставте ваше меню -->
+    <!-- _Menu.cshtml -->
+    <nav>
+        <ul>
+            <li><a asp-action="Index" asp-controller="Home">Головна</a></li>
+            <li><a asp-action="About" asp-controller="Home">Про нас</a></li>
+            <li><a asp-action="Contact" asp-controller="Home">Контакти</a></li>
+        </ul>
+    </nav>
+
+
+    <!-- Основний вміст сторінки -->
+    <div class="tree">
+        <!-- Вміст вашого дерева родини -->
+        @await Html.PartialAsync("ViewTree", (int)Model)
+    </div>
+</body>
+</html>
