@@ -1,19 +1,26 @@
 ﻿using FamilyTreeWeb.Context;
 using FamilyTreeWeb.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.VisualStudio.Web.CodeGenerators.Mvc.Templates.BlazorIdentity.Pages.Manage;
+using Microsoft.AspNetCore.Authorization;
 
 namespace FamilyTreeWeb.Controllers
 {
+    [Authorize]
     public class AccountController : Controller
     {
         private readonly FamilyTreeDbContext _context;
+        private readonly UserManager<User> _userManager;
+        private readonly SignInManager<User> _signInManager;
 
-        public AccountController(FamilyTreeDbContext context)
+        public AccountController(UserManager<User> userManager, SignInManager<User> signInManager, FamilyTreeDbContext context)
         {
             _context = context;
+            _userManager = userManager;
+            _signInManager = signInManager;
         }
 
-        [HttpGet]
         public IActionResult Register()
         {
             return View();
@@ -35,16 +42,25 @@ namespace FamilyTreeWeb.Controllers
         }
 
         [HttpPost]
-        public IActionResult Register(User newUser)
+        public async Task<IActionResult> Register(User user)
         {
             if (ModelState.IsValid)
             {
-                _context.Users.Add(newUser);
-                _context.SaveChanges();
-                return RedirectToAction("Index", "Home");
+                var userTemp = new User { Login = user.Login};
+                var result = await _userManager.CreateAsync(user, user.Password);
+                if (result.Succeeded)
+                {
+                    await _signInManager.SignInAsync(user, isPersistent: false);
+                    return RedirectToAction("Index", "Home");
+                }
+                foreach (var error in result.Errors)
+                {
+                    ModelState.AddModelError(string.Empty, error.Description);
+                }
             }
-            return View(newUser);
+            return View(user);
         }
+
 
         [HttpPost]
         public IActionResult Login(User user)
@@ -63,7 +79,7 @@ namespace FamilyTreeWeb.Controllers
         }
 
 
-        [HttpDelete]
+        [HttpPost]
         public IActionResult DeleteAccount(string login)
         {
             var userToDelete = _context.Users.FirstOrDefault(u => u.Login == login);

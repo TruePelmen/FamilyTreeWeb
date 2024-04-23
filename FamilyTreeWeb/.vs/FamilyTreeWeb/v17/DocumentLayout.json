@@ -7,24 +7,24 @@
       "RelativeMoniker": "D:0:0:{32B78B0F-7945-429C-8843-C3FBE41DE6F7}|FamilyTreeWeb\\FamilyTreeWeb.csproj|solutionrelative:familytreeweb\\controllers\\accountcontroller .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{32B78B0F-7945-429C-8843-C3FBE41DE6F7}|FamilyTreeWeb\\FamilyTreeWeb.csproj|D:\\University\\Software Engineering 2\\FamilyTree17.04\\FamilyTreeWeb\\FamilyTreeWeb\\familytreeweb\\views\\account\\manage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{32B78B0F-7945-429C-8843-C3FBE41DE6F7}|FamilyTreeWeb\\FamilyTreeWeb.csproj|solutionrelative:familytreeweb\\views\\account\\manage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{32B78B0F-7945-429C-8843-C3FBE41DE6F7}|FamilyTreeWeb\\FamilyTreeWeb.csproj|d:\\university\\software engineering 2\\familytree17.04\\familytreeweb\\familytreeweb\\familytreeweb\\views\\account\\editaccount.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{32B78B0F-7945-429C-8843-C3FBE41DE6F7}|FamilyTreeWeb\\FamilyTreeWeb.csproj|solutionrelative:familytreeweb\\views\\account\\editaccount.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{32B78B0F-7945-429C-8843-C3FBE41DE6F7}|FamilyTreeWeb\\FamilyTreeWeb.csproj|D:\\University\\Software Engineering 2\\FamilyTree17.04\\FamilyTreeWeb\\FamilyTreeWeb\\familytreeweb\\views\\home\\indexauth.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{32B78B0F-7945-429C-8843-C3FBE41DE6F7}|FamilyTreeWeb\\FamilyTreeWeb.csproj|solutionrelative:familytreeweb\\views\\home\\indexauth.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{32B78B0F-7945-429C-8843-C3FBE41DE6F7}|FamilyTreeWeb\\FamilyTreeWeb.csproj|d:\\university\\software engineering 2\\familytree17.04\\familytreeweb\\familytreeweb\\familytreeweb\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{32B78B0F-7945-429C-8843-C3FBE41DE6F7}|FamilyTreeWeb\\FamilyTreeWeb.csproj|solutionrelative:familytreeweb\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{32B78B0F-7945-429C-8843-C3FBE41DE6F7}|FamilyTreeWeb\\FamilyTreeWeb.csproj|D:\\University\\Software Engineering 2\\FamilyTree17.04\\FamilyTreeWeb\\FamilyTreeWeb\\familytreeweb\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{32B78B0F-7945-429C-8843-C3FBE41DE6F7}|FamilyTreeWeb\\FamilyTreeWeb.csproj|solutionrelative:familytreeweb\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{32B78B0F-7945-429C-8843-C3FBE41DE6F7}|FamilyTreeWeb\\FamilyTreeWeb.csproj|d:\\university\\software engineering 2\\familytree17.04\\familytreeweb\\familytreeweb\\familytreeweb\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32B78B0F-7945-429C-8843-C3FBE41DE6F7}|FamilyTreeWeb\\FamilyTreeWeb.csproj|solutionrelative:familytreeweb\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{32B78B0F-7945-429C-8843-C3FBE41DE6F7}|FamilyTreeWeb\\FamilyTreeWeb.csproj|D:\\University\\Software Engineering 2\\FamilyTree17.04\\FamilyTreeWeb\\FamilyTreeWeb\\familytreeweb\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{32B78B0F-7945-429C-8843-C3FBE41DE6F7}|FamilyTreeWeb\\FamilyTreeWeb.csproj|solutionrelative:familytreeweb\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32B78B0F-7945-429C-8843-C3FBE41DE6F7}|FamilyTreeWeb\\FamilyTreeWeb.csproj|D:\\University\\Software Engineering 2\\FamilyTree17.04\\FamilyTreeWeb\\FamilyTreeWeb\\familytreeweb\\views\\profile\\profile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{32B78B0F-7945-429C-8843-C3FBE41DE6F7}|FamilyTreeWeb\\FamilyTreeWeb.csproj|solutionrelative:familytreeweb\\views\\profile\\profile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -54,41 +54,28 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "EditAccount.cshtml",
-              "DocumentMoniker": "D:\\University\\Software Engineering 2\\FamilyTree17.04\\FamilyTreeWeb\\FamilyTreeWeb\\FamilyTreeWeb\\Views\\Account\\EditAccount.cshtml",
-              "RelativeDocumentMoniker": "FamilyTreeWeb\\Views\\Account\\EditAccount.cshtml",
-              "ToolTip": "D:\\University\\Software Engineering 2\\FamilyTree17.04\\FamilyTreeWeb\\FamilyTreeWeb\\FamilyTreeWeb\\Views\\Account\\EditAccount.cshtml",
-              "RelativeToolTip": "FamilyTreeWeb\\Views\\Account\\EditAccount.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-17T08:16:00.614Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Manage.cshtml",
-              "DocumentMoniker": "D:\\University\\Software Engineering 2\\FamilyTree17.04\\FamilyTreeWeb\\FamilyTreeWeb\\FamilyTreeWeb\\Views\\Account\\Manage.cshtml",
-              "RelativeDocumentMoniker": "FamilyTreeWeb\\Views\\Account\\Manage.cshtml",
-              "ToolTip": "D:\\University\\Software Engineering 2\\FamilyTree17.04\\FamilyTreeWeb\\FamilyTreeWeb\\FamilyTreeWeb\\Views\\Account\\Manage.cshtml",
-              "RelativeToolTip": "FamilyTreeWeb\\Views\\Account\\Manage.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAGAAAA",
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "D:\\University\\Software Engineering 2\\FamilyTree17.04\\FamilyTreeWeb\\FamilyTreeWeb\\FamilyTreeWeb\\Views\\Account\\Register.cshtml",
+              "RelativeDocumentMoniker": "FamilyTreeWeb\\Views\\Account\\Register.cshtml",
+              "ToolTip": "D:\\University\\Software Engineering 2\\FamilyTree17.04\\FamilyTreeWeb\\FamilyTreeWeb\\FamilyTreeWeb\\Views\\Account\\Register.cshtml",
+              "RelativeToolTip": "FamilyTreeWeb\\Views\\Account\\Register.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-17T07:45:42.078Z",
+              "WhenOpened": "2024-04-23T14:58:47.081Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "IndexAuth.cshtml",
-              "DocumentMoniker": "D:\\University\\Software Engineering 2\\FamilyTree17.04\\FamilyTreeWeb\\FamilyTreeWeb\\FamilyTreeWeb\\Views\\Home\\IndexAuth.cshtml",
-              "RelativeDocumentMoniker": "FamilyTreeWeb\\Views\\Home\\IndexAuth.cshtml",
-              "ToolTip": "D:\\University\\Software Engineering 2\\FamilyTree17.04\\FamilyTreeWeb\\FamilyTreeWeb\\FamilyTreeWeb\\Views\\Home\\IndexAuth.cshtml",
-              "RelativeToolTip": "FamilyTreeWeb\\Views\\Home\\IndexAuth.cshtml",
-              "ViewState": "AQIAAH0AAAAAAAAAAADwv4cAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-17T07:33:20.014Z",
+              "Title": "User.cs",
+              "DocumentMoniker": "D:\\University\\Software Engineering 2\\FamilyTree17.04\\FamilyTreeWeb\\FamilyTreeWeb\\FamilyTreeWeb\\Models\\User.cs",
+              "RelativeDocumentMoniker": "FamilyTreeWeb\\Models\\User.cs",
+              "ToolTip": "D:\\University\\Software Engineering 2\\FamilyTree17.04\\FamilyTreeWeb\\FamilyTreeWeb\\FamilyTreeWeb\\Models\\User.cs",
+              "RelativeToolTip": "FamilyTreeWeb\\Models\\User.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-23T13:59:42.043Z",
               "EditorCaption": ""
             },
             {
@@ -99,7 +86,7 @@
               "RelativeDocumentMoniker": "FamilyTreeWeb\\Controllers\\AccountController .cs",
               "ToolTip": "D:\\University\\Software Engineering 2\\FamilyTree17.04\\FamilyTreeWeb\\FamilyTreeWeb\\FamilyTreeWeb\\Controllers\\AccountController .cs*",
               "RelativeToolTip": "FamilyTreeWeb\\Controllers\\AccountController .cs*",
-              "ViewState": "AQIAADQAAAAAAAAAAAAwwEEAAAAUAAAA",
+              "ViewState": "AQIAACUAAAAAAAAAAAAkwCsAAAASAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-17T06:48:08.484Z",
               "EditorCaption": ""
@@ -107,6 +94,32 @@
             {
               "$type": "Document",
               "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\University\\Software Engineering 2\\FamilyTree17.04\\FamilyTreeWeb\\FamilyTreeWeb\\FamilyTreeWeb\\Program.cs",
+              "RelativeDocumentMoniker": "FamilyTreeWeb\\Program.cs",
+              "ToolTip": "D:\\University\\Software Engineering 2\\FamilyTree17.04\\FamilyTreeWeb\\FamilyTreeWeb\\FamilyTreeWeb\\Program.cs",
+              "RelativeToolTip": "FamilyTreeWeb\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-15T13:27:43.023Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Profile.cshtml",
+              "DocumentMoniker": "D:\\University\\Software Engineering 2\\FamilyTree17.04\\FamilyTreeWeb\\FamilyTreeWeb\\FamilyTreeWeb\\Views\\Profile\\Profile.cshtml",
+              "RelativeDocumentMoniker": "FamilyTreeWeb\\Views\\Profile\\Profile.cshtml",
+              "ToolTip": "D:\\University\\Software Engineering 2\\FamilyTree17.04\\FamilyTreeWeb\\FamilyTreeWeb\\FamilyTreeWeb\\Views\\Profile\\Profile.cshtml",
+              "RelativeToolTip": "FamilyTreeWeb\\Views\\Profile\\Profile.cshtml",
+              "ViewState": "AQIAACQBAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-17T10:52:37.579Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "HomeController.cs",
               "DocumentMoniker": "D:\\University\\Software Engineering 2\\FamilyTree17.04\\FamilyTreeWeb\\FamilyTreeWeb\\FamilyTreeWeb\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "FamilyTreeWeb\\Controllers\\HomeController.cs",
@@ -115,19 +128,6 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-17T06:47:52.037Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\University\\Software Engineering 2\\FamilyTree17.04\\FamilyTreeWeb\\FamilyTreeWeb\\FamilyTreeWeb\\Program.cs",
-              "RelativeDocumentMoniker": "FamilyTreeWeb\\Program.cs",
-              "ToolTip": "D:\\University\\Software Engineering 2\\FamilyTree17.04\\FamilyTreeWeb\\FamilyTreeWeb\\FamilyTreeWeb\\Program.cs",
-              "RelativeToolTip": "FamilyTreeWeb\\Program.cs",
-              "ViewState": "AQIAABQAAAAAAAAAAAArwCMAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-15T13:27:43.023Z",
               "EditorCaption": ""
             }
           ]

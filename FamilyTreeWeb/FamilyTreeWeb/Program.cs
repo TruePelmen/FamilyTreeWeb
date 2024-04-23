@@ -1,4 +1,6 @@
 using FamilyTreeWeb.Context;
+using FamilyTreeWeb.Models;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -9,6 +11,10 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<FamilyTreeDbContext>(
     o => o.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection"))
 );
+
+builder.Services.AddIdentity<User, IdentityRole>()
+    .AddEntityFrameworkStores<FamilyTreeDbContext>()
+    .AddDefaultTokenProviders();
 
 var app = builder.Build();
 

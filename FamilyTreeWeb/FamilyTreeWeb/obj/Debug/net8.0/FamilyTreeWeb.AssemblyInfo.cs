@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FamilyTreeWeb")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+997e7bb29d71368005de6c45c73b2ac880d781c6")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ca0a209409584538377ca1c502e97433f014aa71")]
 [assembly: System.Reflection.AssemblyProductAttribute("FamilyTreeWeb")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FamilyTreeWeb")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
