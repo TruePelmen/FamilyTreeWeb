@@ -1,0 +1,63 @@
+﻿@model List<FamilyTreeWeb.Models.Photo>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Галерея</title>
+    <style>
+        .photo-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+            .photo-gallery img {
+                width: 100%;
+                height: auto;
+                border-radius: 5px;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+                transition: all 0.3s ease;
+                cursor: pointer;
+            }
+
+                .photo-gallery img:hover {
+                    transform: scale(1.1);
+                }
+
+        .navbar {
+            background-color: #144509 !important;
+        }
+
+        .navbar-brand {
+            color: #ffffff !important;
+            font-size: 2rem;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#"></a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="@Url.Action("Index", "Home")">Головна</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="@Url.Action("ViewTree", "Tree", new {id = Model[0].Person.Tree.PrimaryPerson})">Дерево</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <h1>Галерея</h1>
+    <div class="photo-gallery">
+        @foreach (var photo in Model)
+        {
+            <img src="@photo.FilePath" alt="Фото" onclick="window.location.href='@Url.Action("Photo", "Photo", new { id = photo.Id})'" />
+        }
+    </div>
+</body>
+</html>

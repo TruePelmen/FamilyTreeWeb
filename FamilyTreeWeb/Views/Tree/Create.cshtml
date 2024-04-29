@@ -1,0 +1,113 @@
+﻿@model FamilyTreeWeb.Models.Person
+
+@{
+    ViewData["Title"] = "Створення";
+}
+
+<style>
+    body {
+        background-color: white;
+        color: black;
+    }
+
+    .form-group {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .btn-primary {
+        background-color: #144509;
+        border-color: #144509;
+    }
+</style>
+
+<h1>Створення</h1>
+
+<hr />
+<div class="row">
+    <div class="col-md-6 offset-md-3">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="FirstName" class="control-label">Ім'я *</label>
+                <input asp-for="FirstName" class="form-control" required />
+                <span asp-validation-for="FirstName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="LastName" class="control-label">Прізвище *</label>
+                <input asp-for="LastName" class="form-control" required />
+                <span asp-validation-for="LastName" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Gender" class="control-label">Стать *</label>
+                <select asp-for="Gender" class="form-control" required>
+                    <option value="">Оберіть стать</option>
+                    <option value="male">Чоловіча</option>
+                    <option value="female">Жіноча</option>
+                </select>
+                <span asp-validation-for="Gender" class="text-danger"></span>
+            </div>
+
+            <div class="form-group" id="maidenNameField" style="display: none;">
+                <label asp-for="MaidenName" class="control-label">Дівоче прізвище</label>
+                <input asp-for="MaidenName" class="form-control" />
+                <span asp-validation-for="MaidenName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="OtherNameVariants" class="control-label">Інші варіанти імені</label>
+                <input asp-for="OtherNameVariants" class="form-control"/>
+                <span asp-validation-for="OtherNameVariants" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="BirthDate" class="control-label">Дата народження *</label>
+                <input asp-for="BirthDate" class="form-control datepicker" required />
+                <span asp-validation-for="BirthDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="BirthPlace" class="control-label">Місце народження</label>
+                <input asp-for="BirthPlace" class="form-control" />
+                <span asp-validation-for="BirthPlace" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DeathDate" class="control-label">Дата смерті</label>
+                <input asp-for="DeathDate" class="form-control datepicker" />
+                <span asp-validation-for="DeathDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DeathPlace" class="control-label">Місце смерті</label>
+                <input asp-for="DeathPlace" class="form-control" />
+                <span asp-validation-for="DeathPlace" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Додати особу" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Повернутися до списку</a>
+</div>
+
+@section Scripts {
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+        $(function () {
+            $(".datepicker").datepicker({
+                dateFormat: 'yy-mm-dd'
+            });
+        });
+        $('#Gender').change(function () {
+            if ($(this).val() === 'female') {
+                $('#maidenNameField').show();
+            } else {
+                $('#maidenNameField').hide();
+            }
+        });
+    </script>
+}
+
+

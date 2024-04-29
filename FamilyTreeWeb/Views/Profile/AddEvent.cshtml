@@ -1,0 +1,31 @@
+﻿@model FamilyTreeWeb.Models.Event
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Додати подію</title>
+</head>
+<body>
+    <h2>Додати нову подію</h2>
+    <form asp-action="CreateEvent" method="post">
+        <input type="hidden" asp-for="PersonId" />
+        <div>
+            <label asp-for="EventType">Тип події:</label>
+            <input asp-for="EventType" />
+        </div>
+        <div>
+            <label asp-for="EventDate">Дата:</label>
+            <input asp-for="EventDate" type="date" />
+        </div>
+        <div>
+            <label asp-for="EventPlace">Місце:</label>
+            <input asp-for="EventPlace" />
+        </div>
+        <div>
+            <label asp-for="Description">Опис:</label>
+            <textarea asp-for="Description"></textarea>
+        </div>
+        <button type="submit">Зберегти</button>
+    </form>
+</body>
+</html>

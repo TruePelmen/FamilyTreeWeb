@@ -1,0 +1,631 @@
+﻿@model FamilyTreeWeb.Models.Person
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Дерево родини</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        .tree {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+            position: relative;
+            flex-direction: column;
+        }
+
+        .parent-container {
+            display: flex;
+            position: relative;
+            flex-direction: row;
+        }
+
+        .children-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            flex-direction: row;
+        }
+
+        .spacer {
+            position: relative;
+            width: 100px;
+            height: 180px;
+        }
+
+        .spacer-parent {
+            height: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        .spacer-parent-small {
+            width: 50px;
+            height: 90px;
+            position: relative;
+        }
+
+        .spacer-parent-big {
+            width: 60px;
+            height: 90px;
+            position: relative;
+        }
+
+        .line-parent-small {
+            width: 50px;
+            height: 1.5px;
+            background-color: #000;
+            position: absolute;
+            top: 70%;
+            transform: translateY(-70%);
+        }
+
+        .line-parent-small-white {
+            width: 50px;
+            height: 1.5px;
+            background-color: #f5f5f5;
+            position: absolute;
+            top: 70%;
+            transform: translateY(-70%);
+        }
+
+        .line-parent-v {
+            width: 1.5px;
+            height: 57px;
+            background-color: #000;
+            position: absolute;
+            top: 70%;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .line-horizontal {
+            width: 100px; /* Ширина лінії */
+            height: 1.5px; /* Висота лінії */
+            background-color: #000;
+            position: absolute;
+            top: 70%;
+            transform: translateY(-70%);
+        }
+
+        .line-vertical {
+            width: 1.5px; /* Ширина лінії */
+            height: 70px; /* Висота лінії */
+            background-color: #000; /* Колір лінії */
+            position: absolute; /* Позиціонуємо абсолютно відносно батьківського контейнера */
+            top: 70%;
+            left: 50%; /* Розміщуємо лінію на вертикальному центрі */
+            transform: translateX(-50%);
+        }
+
+        .line-child-v {
+            width: 1.5px; /* Ширина лінії */
+            height: 30px; /* Висота лінії */
+            background-color: #000; /* Колір лінії */
+            position: absolute; /* Позиціонуємо абсолютно відносно батьківського контейнера */
+            left: 50%; /* Розміщуємо лінію на вертикальному центрі */
+            transform: translateX(-50%);
+            transform: translateY(-100%);
+        }
+
+        .line-child-h {
+            height: 1.5px; /* Висота лінії */
+            background-color: #000; /* Колір лінії */
+            position: absolute; /* Позиціонуємо абсолютно відносно батьківського контейнера */
+            top: 50%; /* Розміщуємо лінію на вертикальному центрі */
+            transform: translateY(-50%);
+        }
+
+        .child-card {
+            position: relative;
+            padding: 15px 0 0 0;
+        }
+
+
+        /* Контейнер для карток */
+        .card-container {
+            display: flex;
+        }
+
+        .card.small {
+            transition: transform 0.3s ease;
+        }
+
+            .card.small:hover{
+                transform: scale(1.1);
+            }
+
+
+        .card.central {
+            background-color: #CDD7CB; /* світло-зелений фон */
+            width: 400px; /* Зменшуємо ширину карточки */
+            height: 180px; /* Зменшуємо висоту карточки */
+            border-radius: 10px;
+            padding: 10px; /* Зменшуємо відступи від країв карточки */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+
+            .card.central .buttons button {
+                background-color: #144509; /* зелений колір кнопок */
+                color: #fff; /* білий колір тексту на кнопках */
+                border: none;
+                border-radius: 4px;
+                padding: 5px 10px; /* Зменшуємо розмір кнопок */
+                margin-right: 5px; /* Зменшуємо відступи між кнопками */
+                cursor: pointer;
+                width: 100px; /* Зменшуємо ширину кнопок */
+                height: 30px; /* Зменшуємо висоту кнопок */
+            }
+
+                .card.central .buttons button:last-child {
+                    margin-right: 0; /* відступу від правого краю останньої кнопки */
+                }
+
+            .card.central h2 {
+                margin: 0;
+                color: #333;
+                font-size: 20px; /* Зменшуємо розмір шрифту заголовка */
+                margin-bottom: 5px;
+                font-weight: bold;
+            }
+
+            .card.central .subtitle {
+                font-size: 12px; /* Зменшуємо розмір шрифту підзаголовка */
+                color: #666;
+                margin-bottom: 5px; /* Зменшуємо відступ між підзаголовком і деталями */
+            }
+
+            .card.central .details {
+                font-size: 10px; /* Зменшуємо розмір шрифту деталей */
+                color: #666;
+                margin-bottom: 5px;
+            }
+
+                .card.central .details p {
+                    margin: 2px 0; /* Зменшуємо відступи між рядками деталей */
+                }
+
+            .card.central .photo {
+                position: absolute;
+                top: 20px; /* Зменшуємо відстань фото від верхнього краю карточки */
+                right: 10px; /* Зменшуємо відстань фото від правого краю карточки */
+            }
+
+                .card.central .photo img {
+                    width: 80px; /* Зменшуємо ширину фото */
+                    height: 100px; /* Зменшуємо висоту фото */
+                    object-fit: cover;
+                }
+
+            .card.central .buttons button:hover {
+                background-color: #33B017;
+            }
+
+        .card.small {
+            background-color: Beige; /* Beige колір фону */
+            width: 190px; /* Ширина малої карточки */
+            height: 90px; /* Висота малої карточки */
+            border-radius: 10px;
+            padding: 10px; /* Відступи всередині карточки */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+
+            .card.small h2 {
+                margin: 0;
+                color: #333;
+                font-size: 16px; /* Розмір шрифту імені */
+                margin-bottom: 5px;
+                font-weight: bold;
+                width: 130px;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+
+            .card.small .years {
+                font-size: 14px; /* Розмір шрифту років життя */
+                color: #666;
+                margin-bottom: 5px; /* Відступ між роками життя та фото */
+            }
+
+            .card.small .photo {
+                position: absolute;
+                top: 20px; /* Відстань фото від верхнього краю карточки */
+                left: 130px; /* Відстань фото від правого краю карточки */
+            }
+
+                .card.small .photo img {
+                    width: 30px; /* Ширина фото */
+                    height: 50px; /* Висота фото */
+                    object-fit: cover;
+                }
+
+        .navbar {
+            background-color: #144509 !important;
+        }
+
+        .navbar-brand {
+            color: #ffffff !important;
+            font-size: 2rem;
+        }
+
+        .round-button {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: #144509; /* Зелений колір */
+            border: none; /* Видаляємо рамку */
+            cursor: pointer; 
+            outline: none; 
+            padding: 0; /* Видаляємо відступи */
+        }
+
+            /* Стилі для зображення плюса всередині кнопки */
+            .round-button img {
+                width: 20px; /* Ширина зображення плюса */
+                height: 20px; /* Висота зображення плюса */
+            }
+
+            /* При наведенні миші змінюємо колір кнопки */
+            .round-button:hover {
+                background-color: #45a049; /* Темно-зелений колір */
+            }
+
+        .small-button {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .central-button {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#"></a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="@Url.Action("Index", "Home")">Головна</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="@Url.Action("Gallery", "Photo", new {id = Model.Tree.Id})">Галерея</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="@Url.Action("Calendar", "Calendar", new {id = Model.Tree.Id} )">Календар</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="tree">
+        <div class="parent-container">
+            <div class="card small" @if (MaleFocus() != null && MaleFocus().Father != null)
+            {
+                <text>onclick="window.location.href='@Url.Action("ViewTree", "Tree", new { id = MaleFocus().Father.Id })'"</text>
+            }>
+                @if (MaleFocus() != null && MaleFocus().Father != null)
+                {
+                    <h2>@MaleFocus().Father.FullName</h2>
+                    <div class="years">@MaleFocus().Father.BirthDate?.Year - @MaleFocus().Father.DeathDate?.Year</div>
+                    <div class="photo">
+                        @if (MaleFocus().Father.MainPhoto != null)
+                        {
+                            <img src="@MaleFocus().Father.MainPhoto.FilePath" alt="Фото">
+                        }
+                        else
+                        {
+                                    <img src="https://cdn-icons-png.flaticon.com/512/700/700674.png" />
+                        }
+                    </div>
+                }
+                else
+				{
+                            <button class="round-button small-button">
+                            <img src="https://previews.dropbox.com/p/thumb/ACMEs52nSjRzUEJd7CQp3aoa5J8_bAYspanlY-yCQ8kisvtCE7LA2TepffCXL8jM_G_FBEiIzJuEC87HMW_EE-dyXqgo95V6Z2NmuRbVQSQmkLQSYE8D177ELigGU9iO-pEtjPsh_ercfcSRoK-T1h6FDMCoZdK-6Abb12z3jR3h0Zt4yXJNJUxLNurDouxkZn-pWVOpv2E468K9tBaff985QpC74Jra4NAbj3n2dsNuNlnIVsecZfT7z8OZ4SZDMt-QOVLJrWCCkCy3gSqt-iJKKBaKTOAsaXUshVTzuHS0THKGtC0-3_ZMuySQrk_TB7Cs3PF4IQBEypWuTtmCTh6z/p.png" alt="Plus Icon">
+                        </button> 
+                 }
+                           
+            </div>
+
+            <div class="spacer-parent-small">
+                <div class="line-parent-small"></div>
+                <div class="line-parent-v"></div>
+            </div>
+
+            <div class="card small" @if (MaleFocus() != null && MaleFocus().Mother != null)
+            {
+                <text>onclick="window.location.href='@Url.Action("ViewTree", "Tree", new { id = MaleFocus().Mother.Id })'"</text>
+            }>
+                @if (MaleFocus() != null && MaleFocus().Mother != null)
+                {
+                    <h2>@MaleFocus().Mother.FullName</h2>
+                    <div class="years">@MaleFocus().Mother.BirthDate?.Year - @MaleFocus().Mother.DeathDate?.Year</div>
+                    <div class="photo">
+                        @if (MaleFocus().Mother.MainPhoto != null)
+                        {
+                            <img src="@MaleFocus().Mother.MainPhoto.FilePath" alt="Фото">
+                        }
+                        else
+                        {
+                                    <img src="https://cdn-icons-png.flaticon.com/512/4042/4042422.png" />
+                        }
+                    </div>
+                }
+                else
+                {
+                                <button class="round-button small-button">
+                                <img src="https://previews.dropbox.com/p/thumb/ACMEs52nSjRzUEJd7CQp3aoa5J8_bAYspanlY-yCQ8kisvtCE7LA2TepffCXL8jM_G_FBEiIzJuEC87HMW_EE-dyXqgo95V6Z2NmuRbVQSQmkLQSYE8D177ELigGU9iO-pEtjPsh_ercfcSRoK-T1h6FDMCoZdK-6Abb12z3jR3h0Zt4yXJNJUxLNurDouxkZn-pWVOpv2E468K9tBaff985QpC74Jra4NAbj3n2dsNuNlnIVsecZfT7z8OZ4SZDMt-QOVLJrWCCkCy3gSqt-iJKKBaKTOAsaXUshVTzuHS0THKGtC0-3_ZMuySQrk_TB7Cs3PF4IQBEypWuTtmCTh6z/p.png" alt="Plus Icon">
+                            </button>
+                }
+            </div>
+
+            <div class="spacer-parent-big"></div>
+
+            <div class="card small" @if (FemaleFocus() != null && FemaleFocus().Father != null)
+            {
+                <text>onclick="window.location.href='@Url.Action("ViewTree", "Tree", new { id = FemaleFocus().Father.Id })'"</text>
+            }>
+                @if (FemaleFocus() != null && FemaleFocus().Father != null)
+                {
+                    <h2>@FemaleFocus().Father.FullName</h2>
+                    <div class="years">@FemaleFocus().Father.BirthDate?.Year - @FemaleFocus().Father.DeathDate?.Year</div>
+                    <div class="photo">
+                        @if (FemaleFocus().Father.MainPhoto != null)
+                        {
+                            <img src="@FemaleFocus().Father.MainPhoto.FilePath" alt="Фото">
+                        }
+                        else
+                        {
+         <img src="https://cdn-icons-png.flaticon.com/512/700/700674.png" />
+                        }
+                    </div>
+                }
+                else
+                {
+                                <button class="round-button small-button">
+                                <img src="https://previews.dropbox.com/p/thumb/ACMEs52nSjRzUEJd7CQp3aoa5J8_bAYspanlY-yCQ8kisvtCE7LA2TepffCXL8jM_G_FBEiIzJuEC87HMW_EE-dyXqgo95V6Z2NmuRbVQSQmkLQSYE8D177ELigGU9iO-pEtjPsh_ercfcSRoK-T1h6FDMCoZdK-6Abb12z3jR3h0Zt4yXJNJUxLNurDouxkZn-pWVOpv2E468K9tBaff985QpC74Jra4NAbj3n2dsNuNlnIVsecZfT7z8OZ4SZDMt-QOVLJrWCCkCy3gSqt-iJKKBaKTOAsaXUshVTzuHS0THKGtC0-3_ZMuySQrk_TB7Cs3PF4IQBEypWuTtmCTh6z/p.png" alt="Plus Icon">
+                            </button>
+                }
+            </div>
+
+            <div class="spacer-parent-small">
+                <div class="line-parent-small"></div>
+                <div class="line-parent-v"></div>
+            </div>
+
+            <div class="card small" @if (FemaleFocus() != null && FemaleFocus().Mother != null)
+            {
+                <text>onclick="window.location.href='@Url.Action("ViewTree", "Tree", new { id = FemaleFocus().Mother.Id })'"</text>
+            }>
+                @if (FemaleFocus() != null && FemaleFocus().Mother != null)
+                {
+                    <h2>@FemaleFocus().Mother.FullName</h2>
+                    <div class="years">@FemaleFocus().Mother.BirthDate?.Year - @FemaleFocus().Mother.DeathDate?.Year</div>
+                    <div class="photo">
+                        @if (FemaleFocus().Mother.MainPhoto != null)
+                        {
+                            <img src="@FemaleFocus().Mother.MainPhoto.FilePath" alt="Фото">
+                        }
+                        else
+                        {
+                                    <img src="https://cdn-icons-png.flaticon.com/512/4042/4042422.png" />
+                        }
+                    </div>
+                }
+                else
+                {
+                                <button class="round-button small-button">
+                                <img src="https://previews.dropbox.com/p/thumb/ACMEs52nSjRzUEJd7CQp3aoa5J8_bAYspanlY-yCQ8kisvtCE7LA2TepffCXL8jM_G_FBEiIzJuEC87HMW_EE-dyXqgo95V6Z2NmuRbVQSQmkLQSYE8D177ELigGU9iO-pEtjPsh_ercfcSRoK-T1h6FDMCoZdK-6Abb12z3jR3h0Zt4yXJNJUxLNurDouxkZn-pWVOpv2E468K9tBaff985QpC74Jra4NAbj3n2dsNuNlnIVsecZfT7z8OZ4SZDMt-QOVLJrWCCkCy3gSqt-iJKKBaKTOAsaXUshVTzuHS0THKGtC0-3_ZMuySQrk_TB7Cs3PF4IQBEypWuTtmCTh6z/p.png" alt="Plus Icon">
+                            </button>
+                }
+            </div>
+        </div>
+
+        <!-- Проміжок між карточками -->
+        <div class="spacer-parent">
+        </div>
+
+        <!-- Контейнер для карток -->
+        <div class="card-container">
+            <div class="card central">
+                @if(MaleFocus() != null)
+                {
+                    <h2>@MaleFocus().FullName</h2>
+                    <div class="subtitle">@MaleFocus().BirthDate?.Year - @MaleFocus().DeathDate?.Year</div>
+                    <div class="details">
+                        <p><strong>Дата народження:</strong> @MaleFocus().BirthDate</p>
+                        <p><strong>Місце народження:</strong> @MaleFocus().BirthPlace</p>
+                        @if(MaleFocus().DeathDate != null)
+						{
+							<p><strong>Дата смерті:</strong> @MaleFocus().DeathDate</p>
+							<p><strong>Місце смерті:</strong> @MaleFocus().DeathPlace</p>
+						}
+                    </div>
+                    <div class="photo">
+                        @if (MaleFocus().MainPhoto != null)
+                        {
+                            <img src="@MaleFocus().MainPhoto.FilePath" alt="Фото">
+                        }
+                        else
+                        {
+                            <img src="https://cdn-icons-png.flaticon.com/512/700/700674.png" />
+                        }
+                    </div>
+                    <div class="buttons">
+                        <button onclick="window.location.href='@Url.Action("Profile", "Profile", new { id = MaleFocus().Id })'">Профіль</button>
+                        <button>Видалити</button>
+                    </div>
+                }
+                else
+                {
+                    <button class="round-button central-button">
+                        <img src="https://previews.dropbox.com/p/thumb/ACMEs52nSjRzUEJd7CQp3aoa5J8_bAYspanlY-yCQ8kisvtCE7LA2TepffCXL8jM_G_FBEiIzJuEC87HMW_EE-dyXqgo95V6Z2NmuRbVQSQmkLQSYE8D177ELigGU9iO-pEtjPsh_ercfcSRoK-T1h6FDMCoZdK-6Abb12z3jR3h0Zt4yXJNJUxLNurDouxkZn-pWVOpv2E468K9tBaff985QpC74Jra4NAbj3n2dsNuNlnIVsecZfT7z8OZ4SZDMt-QOVLJrWCCkCy3gSqt-iJKKBaKTOAsaXUshVTzuHS0THKGtC0-3_ZMuySQrk_TB7Cs3PF4IQBEypWuTtmCTh6z/p.png" alt="Plus Icon">
+                    </button>
+                }
+            </div>
+
+            <!-- Проміжок між карточками -->
+            <div class="spacer">
+                <div class="line-horizontal"></div>
+                <div class="line-vertical"></div>
+            </div>
+
+            <!-- Карточка дружини -->
+            <div class="card central">
+                @if (FemaleFocus() != null)
+                {
+                    <h2>@FemaleFocus().FullName</h2>
+                    <div class="subtitle">@FemaleFocus().BirthDate?.Year - @FemaleFocus().DeathDate?.Year</div>
+                    <div class="details">
+                        <p><strong>Дата народження:</strong> @FemaleFocus().BirthDate</p>
+                        <p><strong>Місце народження:</strong> @FemaleFocus().BirthPlace</p>
+                        @if (FemaleFocus().DeathDate != null)
+                        {
+                            <p><strong>Дата смерті:</strong> @FemaleFocus().DeathDate</p>
+                            <p><strong>Місце смерті:</strong> @FemaleFocus().DeathPlace</p>
+                        }
+                    </div>
+                    <div class="photo">
+                        @if (FemaleFocus().MainPhoto != null)
+                        {
+                            <img src="@FemaleFocus().MainPhoto.FilePath" alt="Фото">
+                        }
+                        else
+                        {
+                            <img src="https://cdn-icons-png.flaticon.com/512/4042/4042422.png" />
+                        }
+                    </div>
+                    <div class="buttons">
+                        <button onclick="window.location.href='@Url.Action("Profile", "Profile", new { id = FemaleFocus().Id })'">Профіль</button>
+                        <button>Видалити</button>
+                    </div>
+                }
+                else
+                {
+                    <button class="round-button central-button">
+                        <img src="https://previews.dropbox.com/p/thumb/ACMEs52nSjRzUEJd7CQp3aoa5J8_bAYspanlY-yCQ8kisvtCE7LA2TepffCXL8jM_G_FBEiIzJuEC87HMW_EE-dyXqgo95V6Z2NmuRbVQSQmkLQSYE8D177ELigGU9iO-pEtjPsh_ercfcSRoK-T1h6FDMCoZdK-6Abb12z3jR3h0Zt4yXJNJUxLNurDouxkZn-pWVOpv2E468K9tBaff985QpC74Jra4NAbj3n2dsNuNlnIVsecZfT7z8OZ4SZDMt-QOVLJrWCCkCy3gSqt-iJKKBaKTOAsaXUshVTzuHS0THKGtC0-3_ZMuySQrk_TB7Cs3PF4IQBEypWuTtmCTh6z/p.png" alt="Plus Icon">
+                    </button>
+                }
+            </div>
+            </div>
+        </div>
+
+        <div class="spacer-parent">
+        <div id="line-child-h-id" class="line-child-h"></div>
+        </div>
+        <div class="children-container">
+            @foreach(var child in Model.Children)
+			{
+				<div class="child-card">
+					<div class="line-child-v"></div>
+                      <div class="card small" onclick="window.location.href='@Url.Action("ViewTree", "Tree", new { id = child.Id })'">
+                        <h2>@child.FullName</h2>
+					    <div class="years">@child.BirthDate?.Year - @child.DeathDate?.Year</div>
+					    <div class="photo">
+						    @if (child.MainPhoto != null)
+						    {
+							    <img src="@child.MainPhoto.FilePath" alt="Фото">
+						    }
+						    else if(child.Gender == "male")
+						    {
+                            <img src="https://cdn-icons-png.flaticon.com/512/700/700674.png" />
+                        }
+                            else
+						    {
+                            <img src="https://cdn-icons-png.flaticon.com/512/4042/4042422.png" />
+						    }
+					    </div>
+				    </div>
+                    
+                </div>
+                <div id="spacer" class="spacer-parent-big">
+                    <div class="line-parent-small-white"></div>
+                </div>
+			}
+
+            <div class="child-card">
+					<div class="line-child-v"></div>
+                    <div class="card small">
+                
+                <button class="round-button small-button">
+                    <img src="https://previews.dropbox.com/p/thumb/ACMEs52nSjRzUEJd7CQp3aoa5J8_bAYspanlY-yCQ8kisvtCE7LA2TepffCXL8jM_G_FBEiIzJuEC87HMW_EE-dyXqgo95V6Z2NmuRbVQSQmkLQSYE8D177ELigGU9iO-pEtjPsh_ercfcSRoK-T1h6FDMCoZdK-6Abb12z3jR3h0Zt4yXJNJUxLNurDouxkZn-pWVOpv2E468K9tBaff985QpC74Jra4NAbj3n2dsNuNlnIVsecZfT7z8OZ4SZDMt-QOVLJrWCCkCy3gSqt-iJKKBaKTOAsaXUshVTzuHS0THKGtC0-3_ZMuySQrk_TB7Cs3PF4IQBEypWuTtmCTh6z/p.png" alt="Plus Icon">
+                </button>
+                
+					    </div>
+				    </div>
+                    
+                </div>
+        </div>
+    </div>
+
+    <script>
+        // Функція, яка оновлює ширину лінії
+        function updateLineWidth(count) {
+            var spacerWidth = document.getElementById("spacer").offsetWidth;
+            var lineWidth = count * 190 + count * spacerWidth;
+
+            // Знайдемо елемент лінії за id
+            var lineElement = document.getElementById("line-child-h-id");
+
+            // Встановимо ширину лінії
+            lineElement.style.width = lineWidth + "px";
+        }
+
+        window.onload = function () {
+            var childrenCount = @Model.Children.Count;
+
+            // Оновлюємо ширину лінії з використанням кількості дітей
+            updateLineWidth(childrenCount);
+        };
+    </script>
+</body>
+</html>
+@functions {
+
+    public Person MaleFocus()
+    {
+        if(Model.Gender == "male")
+        {
+            return Model;
+        }
+        else
+        {
+            return Model.Spouse;
+        }
+    }
+
+    public Person FemaleFocus()
+	{
+		if(Model.Gender == "female")
+		{
+			return Model;
+		}
+		else
+		{
+			return Model.Spouse;
+		}
+    }
+}
+
+

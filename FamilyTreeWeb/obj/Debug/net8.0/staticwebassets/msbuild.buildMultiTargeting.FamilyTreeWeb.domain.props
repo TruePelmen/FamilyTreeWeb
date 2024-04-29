@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\FamilyTreeWeb.domain.props" />
+</Project>
