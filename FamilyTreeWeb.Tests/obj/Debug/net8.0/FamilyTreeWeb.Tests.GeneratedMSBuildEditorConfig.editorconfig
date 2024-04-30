@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = FamilyTreeWeb.Tests
-build_property.ProjectDir = D:\University\Software Engineering 2\FamilyTreeWeb\FamilyTreeWeb.Tests\
+build_property.ProjectDir = D:\University\Software Engineering 2\FamilyTreeWeb29.04\FamilyTreeWeb\FamilyTreeWeb.Tests\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

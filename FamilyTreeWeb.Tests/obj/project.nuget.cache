@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "s9xPBdJ1cX40R+Mhr4L7Yu5/sXY3ChaQhXIbKQFK7AROTnSatmhGZDz6E48YnTyj184IUv8UIsobUdoleVCMDQ==",
+  "dgSpecHash": "8vdh+LS8Di5Dmdnq+gqNHwhZkHBc8wqkuv9uljXX0fGEYwGOpw02T/vGemO15s9EZEY/teDMMe2e204p0guh/A==",
   "success": true,
-  "projectFilePath": "D:\\University\\Software Engineering 2\\FamilyTreeWeb\\FamilyTreeWeb.Tests\\FamilyTreeWeb.Tests.csproj",
+  "projectFilePath": "D:\\University\\Software Engineering 2\\FamilyTreeWeb29.04\\FamilyTreeWeb\\FamilyTreeWeb.Tests\\FamilyTreeWeb.Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Alex\\.nuget\\packages\\castle.core\\5.1.1\\castle.core.5.1.1.nupkg.sha512",
     "C:\\Users\\Alex\\.nuget\\packages\\coverlet.collector\\6.0.0\\coverlet.collector.6.0.0.nupkg.sha512",

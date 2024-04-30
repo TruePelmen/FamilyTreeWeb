@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\University\\Software Engineering 2\\FamilyTreeWeb\\FamilyTreeWeb.Tests\\FamilyTreeWeb.Tests.csproj": {}
+    "D:\\University\\Software Engineering 2\\FamilyTreeWeb29.04\\FamilyTreeWeb\\FamilyTreeWeb.Tests\\FamilyTreeWeb.Tests.csproj": {}
   },
   "projects": {
-    "D:\\University\\Software Engineering 2\\FamilyTreeWeb\\FamilyTreeWeb.Tests\\FamilyTreeWeb.Tests.csproj": {
+    "D:\\University\\Software Engineering 2\\FamilyTreeWeb29.04\\FamilyTreeWeb\\FamilyTreeWeb.Tests\\FamilyTreeWeb.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\University\\Software Engineering 2\\FamilyTreeWeb\\FamilyTreeWeb.Tests\\FamilyTreeWeb.Tests.csproj",
+        "projectUniqueName": "D:\\University\\Software Engineering 2\\FamilyTreeWeb29.04\\FamilyTreeWeb\\FamilyTreeWeb.Tests\\FamilyTreeWeb.Tests.csproj",
         "projectName": "FamilyTreeWeb.Tests",
-        "projectPath": "D:\\University\\Software Engineering 2\\FamilyTreeWeb\\FamilyTreeWeb.Tests\\FamilyTreeWeb.Tests.csproj",
+        "projectPath": "D:\\University\\Software Engineering 2\\FamilyTreeWeb29.04\\FamilyTreeWeb\\FamilyTreeWeb.Tests\\FamilyTreeWeb.Tests.csproj",
         "packagesPath": "C:\\Users\\Alex\\.nuget\\packages\\",
-        "outputPath": "D:\\University\\Software Engineering 2\\FamilyTreeWeb\\FamilyTreeWeb.Tests\\obj\\",
+        "outputPath": "D:\\University\\Software Engineering 2\\FamilyTreeWeb29.04\\FamilyTreeWeb\\FamilyTreeWeb.Tests\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "D:\\VS 2022\\VS 2022 Tools, components, SDK\\NuGetPackages"
@@ -33,8 +33,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\University\\Software Engineering 2\\FamilyTreeWeb\\FamilyTreeWeb\\FamilyTreeWeb.csproj": {
-                "projectPath": "D:\\University\\Software Engineering 2\\FamilyTreeWeb\\FamilyTreeWeb\\FamilyTreeWeb.csproj"
+              "D:\\University\\Software Engineering 2\\FamilyTreeWeb29.04\\FamilyTreeWeb\\FamilyTreeWeb\\FamilyTreeWeb.csproj": {
+                "projectPath": "D:\\University\\Software Engineering 2\\FamilyTreeWeb29.04\\FamilyTreeWeb\\FamilyTreeWeb\\FamilyTreeWeb.csproj"
               }
             }
           }
@@ -107,14 +107,14 @@
         }
       }
     },
-    "D:\\University\\Software Engineering 2\\FamilyTreeWeb\\FamilyTreeWeb\\FamilyTreeWeb.csproj": {
+    "D:\\University\\Software Engineering 2\\FamilyTreeWeb29.04\\FamilyTreeWeb\\FamilyTreeWeb\\FamilyTreeWeb.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\University\\Software Engineering 2\\FamilyTreeWeb\\FamilyTreeWeb\\FamilyTreeWeb.csproj",
+        "projectUniqueName": "D:\\University\\Software Engineering 2\\FamilyTreeWeb29.04\\FamilyTreeWeb\\FamilyTreeWeb\\FamilyTreeWeb.csproj",
         "projectName": "FamilyTreeWeb",
-        "projectPath": "D:\\University\\Software Engineering 2\\FamilyTreeWeb\\FamilyTreeWeb\\FamilyTreeWeb.csproj",
+        "projectPath": "D:\\University\\Software Engineering 2\\FamilyTreeWeb29.04\\FamilyTreeWeb\\FamilyTreeWeb\\FamilyTreeWeb.csproj",
         "packagesPath": "C:\\Users\\Alex\\.nuget\\packages\\",
-        "outputPath": "D:\\University\\Software Engineering 2\\FamilyTreeWeb\\FamilyTreeWeb\\obj\\",
+        "outputPath": "D:\\University\\Software Engineering 2\\FamilyTreeWeb29.04\\FamilyTreeWeb\\FamilyTreeWeb\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "D:\\VS 2022\\VS 2022 Tools, components, SDK\\NuGetPackages"

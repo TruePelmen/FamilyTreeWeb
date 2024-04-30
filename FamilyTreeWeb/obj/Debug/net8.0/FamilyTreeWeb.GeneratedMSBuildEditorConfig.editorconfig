@@ -9,67 +9,67 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = FamilyTreeWeb
 build_property.RootNamespace = FamilyTreeWeb
-build_property.ProjectDir = D:\University\Software Engineering 2\FamilyTreeWeb\FamilyTreeWeb\
+build_property.ProjectDir = D:\University\Software Engineering 2\FamilyTreeWeb29.04\FamilyTreeWeb\FamilyTreeWeb\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = D:\University\Software Engineering 2\FamilyTreeWeb\FamilyTreeWeb
+build_property.MSBuildProjectDirectory = D:\University\Software Engineering 2\FamilyTreeWeb29.04\FamilyTreeWeb\FamilyTreeWeb
 build_property._RazorSourceGeneratorDebug = 
 
-[D:/University/Software Engineering 2/FamilyTreeWeb/FamilyTreeWeb/Views/Calendar/Calendar.cshtml]
+[D:/University/Software Engineering 2/FamilyTreeWeb29.04/FamilyTreeWeb/FamilyTreeWeb/Views/Calendar/Calendar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FsZW5kYXJcQ2FsZW5kYXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/University/Software Engineering 2/FamilyTreeWeb/FamilyTreeWeb/Views/Home/Index.cshtml]
+[D:/University/Software Engineering 2/FamilyTreeWeb29.04/FamilyTreeWeb/FamilyTreeWeb/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/University/Software Engineering 2/FamilyTreeWeb/FamilyTreeWeb/Views/Home/Privacy.cshtml]
+[D:/University/Software Engineering 2/FamilyTreeWeb29.04/FamilyTreeWeb/FamilyTreeWeb/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/University/Software Engineering 2/FamilyTreeWeb/FamilyTreeWeb/Views/Photo/Gallery.cshtml]
+[D:/University/Software Engineering 2/FamilyTreeWeb29.04/FamilyTreeWeb/FamilyTreeWeb/Views/Photo/Gallery.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGhvdG9cR2FsbGVyeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/University/Software Engineering 2/FamilyTreeWeb/FamilyTreeWeb/Views/Photo/Photo.cshtml]
+[D:/University/Software Engineering 2/FamilyTreeWeb29.04/FamilyTreeWeb/FamilyTreeWeb/Views/Photo/Photo.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGhvdG9cUGhvdG8uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/University/Software Engineering 2/FamilyTreeWeb/FamilyTreeWeb/Views/Profile/AddEvent.cshtml]
+[D:/University/Software Engineering 2/FamilyTreeWeb29.04/FamilyTreeWeb/FamilyTreeWeb/Views/Profile/AddEvent.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZmlsZVxBZGRFdmVudC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/University/Software Engineering 2/FamilyTreeWeb/FamilyTreeWeb/Views/Profile/Profile.cshtml]
+[D:/University/Software Engineering 2/FamilyTreeWeb29.04/FamilyTreeWeb/FamilyTreeWeb/Views/Profile/Profile.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZmlsZVxQcm9maWxlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/University/Software Engineering 2/FamilyTreeWeb/FamilyTreeWeb/Views/Shared/Error.cshtml]
+[D:/University/Software Engineering 2/FamilyTreeWeb29.04/FamilyTreeWeb/FamilyTreeWeb/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/University/Software Engineering 2/FamilyTreeWeb/FamilyTreeWeb/Views/Shared/_ValidationScriptsPartial.cshtml]
+[D:/University/Software Engineering 2/FamilyTreeWeb29.04/FamilyTreeWeb/FamilyTreeWeb/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/University/Software Engineering 2/FamilyTreeWeb/FamilyTreeWeb/Views/Tree/Create.cshtml]
+[D:/University/Software Engineering 2/FamilyTreeWeb29.04/FamilyTreeWeb/FamilyTreeWeb/Views/Tree/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJlZVxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/University/Software Engineering 2/FamilyTreeWeb/FamilyTreeWeb/Views/Tree/ViewTree.cshtml]
+[D:/University/Software Engineering 2/FamilyTreeWeb29.04/FamilyTreeWeb/FamilyTreeWeb/Views/Tree/ViewTree.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJlZVxWaWV3VHJlZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/University/Software Engineering 2/FamilyTreeWeb/FamilyTreeWeb/Views/_ViewImports.cshtml]
+[D:/University/Software Engineering 2/FamilyTreeWeb29.04/FamilyTreeWeb/FamilyTreeWeb/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/University/Software Engineering 2/FamilyTreeWeb/FamilyTreeWeb/Views/_ViewStart.cshtml]
+[D:/University/Software Engineering 2/FamilyTreeWeb29.04/FamilyTreeWeb/FamilyTreeWeb/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/University/Software Engineering 2/FamilyTreeWeb/FamilyTreeWeb/Views/Shared/_Layout.cshtml]
+[D:/University/Software Engineering 2/FamilyTreeWeb29.04/FamilyTreeWeb/FamilyTreeWeb/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-psfo8rjejg

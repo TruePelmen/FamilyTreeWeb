@@ -122,6 +122,12 @@ namespace FamilyTreeWeb.Controllers
             return View();
         }
 
+        [Route("Tree/Manage")]
+        public IActionResult Manage()
+        {
+            return View();
+        }
+
         [HttpPost]
         public async Task<IActionResult> Create([Bind("Id", "FirstName", "LastName", "Gender", "MaidebName", "OtherNameVariants", "BirthDate",
             "BirthPlace", "DeathDate", "DeathPlace")] Person person)
