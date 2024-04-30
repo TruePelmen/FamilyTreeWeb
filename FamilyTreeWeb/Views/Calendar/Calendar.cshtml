@@ -1,0 +1,138 @@
+﻿@model List<Anniversary>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Календар</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .calendar {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr); /* Змінено на одну колонку */
+            gap: 10px;
+        }
+
+        .day {
+            padding: 10px;
+            background-color: #f0f0f0;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin-bottom: 10px; /* Додано відступ між днями */
+            position:relative; 
+        }
+
+        .person-card {
+            background-color: #CDD7CB;
+            border-radius: 10px;
+            padding: 20px;
+            display: flex;
+            flex-direction: row;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin-top: 40px;
+            margin-bottom: 40px;
+            max-width: 400px;
+            width: 60%;
+            transition: transform 0.3s ease;
+        }
+
+            .person-card:hover {
+                transform: scale(1.05);
+            }
+
+            .person-card img {
+                width: 20%;
+                border-radius: 50%;
+            }
+
+            .person-card h3 {
+                margin: 10px;
+                color: #144509;
+            }
+
+            .person-card a {
+                text-decoration: none;
+                color: #144509;
+                transition: color 0.3s ease;
+            }
+
+                .person-card a:hover {
+                    color: #0d2f0b;
+                }
+
+        .navbar {
+            background-color: #144509 !important;
+        }
+
+        .navbar-brand {
+            color: #ffffff !important;
+            font-size: 2rem;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-p">
+            <a class="navbar-brand" href="#"></a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="@Url.Action("Index", "Home")">Головна</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="@Url.Action("ViewTree", "Tree", new {id = Model[0].Person.Tree.PrimaryPerson})">Дерево</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="@Url.Action("Gallery", "Photo", new {id = Model[0].Person.Tree.Id})">Галерея</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1>Календар подій</h1>
+        <div class="calendar">
+            @foreach (var anniversary in Model)
+            {
+                <div class="day">
+                    <p> @anniversary.Record</p>
+                    <div onclick="window.location.href='@Url.Action("Profile", "Profile", new { id = anniversary.Person.Id })'">
+                        <div class="person-card">
+                            @if (anniversary.Person.MainPhoto != null)
+                            {
+                                <img src="@anniversary.Person.MainPhoto.FilePath" alt="Фото" />
+                            }
+                            else if (anniversary.Person.Gender == "male")
+                            {
+                                <img src="https://previews.dropbox.com/p/thumb/ACPZLwpFWBfdQoHAVoGUbuX5qRZ6hNiJSVqjy589ofKXo1BErpb0Et1ahDdm2WkOtuZAwHI87nAkPLaoarM-52g8nT1VgommMyG_ZhXZbUh0jfhOLi9SsKuC7vpekCAB2B3dbu18c801ui4FvhslEl4Ri2vRzLccxYNoYWeAfphNGFyBolSCFrvKTfiK1Ehf78n0dLLulmyyfE5-26lFWeILd9t1TjdcPKoWR-DMDXCGJ659qPPtE4XKQuW-din5H9vasQ_5I-5PIvrIfw7kJjR7OX_EOoslJ-lhZGSJ0InfbcpqBpLUTYNkiODgubgzywAiSbj7iwLrl2eZlstjfKwu/p.png" />
+                            }
+                            else
+                            {
+                                <img src="https://previews.dropbox.com/p/thumb/ACN_uIxNmUGGgzqOTjpVW5w-Dd-369Zqgw1WqpBd2k4_pBiMydxeArjS-T5Ix7F9P0G17gOZL0GzHmUGbiIwDAKzqmtXk01zR5L85-AykSDVzw54Lp-ybhPvOv4wBpQd-cdwi-ZMr-TIFxQQnl3x9YG0Vfj2cNnyY7XUmFBMn5pPF5rAXVgtM0DjEHyJU2NEH94g2AFMtkqW_oYmuyhq3d8A7WwDLXAlW-9oS7IKpsfmTD_XyofSn4X31GUlo71OrQC1JbAOJCK6CP7zqqLifgARFMzYH4faLH22ZGuJwPq1P6W1Syp-g4kF84PtVYfR3Xkbull78NFI3HGY3p97caYb/p.png" />
+                            }
+                            <h3>@anniversary.Person.FullName</h3>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</body>
+</html>
+
