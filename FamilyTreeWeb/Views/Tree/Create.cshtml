@@ -1,113 +1,159 @@
-﻿@model FamilyTreeWeb.Models.Person
-
+﻿@model FamilyTreeWeb.Models.Tree
 @{
-    ViewData["Title"] = "Створення";
+    ViewBag.Title = "Створення дерева";
 }
 
-<style>
-    body {
-        background-color: white;
-        color: black;
-    }
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Сторінка створення дерева"</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
 
-    .form-group {
-        text-align: center;
-        margin-bottom: 20px;
-    }
+        .navbar {
+            background-color: #144509 !important;
+        }
 
-    .btn-primary {
-        background-color: #144509;
-        border-color: #144509;
-    }
-</style>
+        .navbar-brand {
+            color: #ffffff !important;
+            font-size: 2rem;
+        }
 
-<h1>Створення</h1>
+        .jumbotron {
+            background-image: url('https://img.freepik.com/premium-photo/collage-photographs-including-one-artists-family_662214-33221.jpg');
+            background-size: cover;
+            background-position: center;
+            color: #ffffff;
+            position: relative;
+            overflow: hidden;
+            margin-bottom: 30px;
+            height: 100px;
+        }
 
-<hr />
-<div class="row">
-    <div class="col-md-6 offset-md-3">
-        <form asp-action="Create">
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        .jumbotron-content {
+            position: relative;
+            z-index: 1;
+            padding: 100px 0;
+            text-align: center;
+        }
+
+        .jumbotron h1 {
+            font-size: 4rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .lead {
+            font-size: 1.5rem;
+        }
+
+        .tree-container {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+
+        .tree-item {
+            border: 1px solid #dee2e6;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            padding: 20px;
+            background-color: #fff;
+            transition: transform 0.3s ease;
+        }
+
+            .tree-item:hover {
+                transform: scale(1.02);
+            }
+
+        .tree-name {
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .tree-description {
+            font-size: 1rem;
+        }
+
+        .search-form {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#"></a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        @Html.ActionLink("Головна", "Index", "Home", null, new { @class = "nav-link" })
+                    </li>
+                    <li class="nav-item">
+                        @Html.ActionLink("Увійти", "Login", "Account", null, new { @class = "nav-link" })
+                    </li>
+                    <li class="nav-item">
+                        @Html.ActionLink("Зареєструватися", "Register", "Account", null, new { @class = "nav-link" })
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="jumbotron">
+            <div class="overlay"></div>
+            <div class="jumbotron-content">
+                <h1 class="display-3">Дерево Роду</h1>
+                <p class="lead">Сплітаймо нитки нашого минулого</p>
+            </div>
+        </div>
+
+        <h1>Створення нового дерева</h1>
+        <form asp-action="Create" method="post">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
-                <label asp-for="FirstName" class="control-label">Ім'я *</label>
-                <input asp-for="FirstName" class="form-control" required />
-                <span asp-validation-for="FirstName" class="text-danger"></span>
+                <label asp-for="Name" class="control-label">Назва дерева</label>
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="LastName" class="control-label">Прізвище *</label>
-                <input asp-for="LastName" class="form-control" required />
-                <span asp-validation-for="LastName" class="text-danger"></span>
+                <label asp-for="PrimaryPerson" class="control-label">Основна особа</label>
+                <input asp-for="PrimaryPerson" class="form-control" />
+                <span asp-validation-for="PrimaryPerson" class="text-danger"></span>
             </div>
-
             <div class="form-group">
-                <label asp-for="Gender" class="control-label">Стать *</label>
-                <select asp-for="Gender" class="form-control" required>
-                    <option value="">Оберіть стать</option>
-                    <option value="male">Чоловіча</option>
-                    <option value="female">Жіноча</option>
+                <label asp-for="Type" class="control-label">Тип дерева</label>
+                <select asp-for="Type" class="form-control">
+                    <option value="public">Публічне</option>
+                    <option value="private">Приватне</option>
                 </select>
-                <span asp-validation-for="Gender" class="text-danger"></span>
+                <span asp-validation-for="Type" class="text-danger"></span>
             </div>
 
-            <div class="form-group" id="maidenNameField" style="display: none;">
-                <label asp-for="MaidenName" class="control-label">Дівоче прізвище</label>
-                <input asp-for="MaidenName" class="form-control" />
-                <span asp-validation-for="MaidenName" class="text-danger"></span>
-            </div>
             <div class="form-group">
-                <label asp-for="OtherNameVariants" class="control-label">Інші варіанти імені</label>
-                <input asp-for="OtherNameVariants" class="form-control"/>
-                <span asp-validation-for="OtherNameVariants" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="BirthDate" class="control-label">Дата народження *</label>
-                <input asp-for="BirthDate" class="form-control datepicker" required />
-                <span asp-validation-for="BirthDate" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="BirthPlace" class="control-label">Місце народження</label>
-                <input asp-for="BirthPlace" class="form-control" />
-                <span asp-validation-for="BirthPlace" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="DeathDate" class="control-label">Дата смерті</label>
-                <input asp-for="DeathDate" class="form-control datepicker" />
-                <span asp-validation-for="DeathDate" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="DeathPlace" class="control-label">Місце смерті</label>
-                <input asp-for="DeathPlace" class="form-control" />
-                <span asp-validation-for="DeathPlace" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Додати особу" class="btn btn-primary" />
+                <input type="submit" value="Створити" class="btn btn-primary" />
             </div>
         </form>
     </div>
-</div>
 
-<div>
-    <a asp-action="Index">Повернутися до списку</a>
-</div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
 
-@section Scripts {
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <script>
-        $(function () {
-            $(".datepicker").datepicker({
-                dateFormat: 'yy-mm-dd'
-            });
-        });
-        $('#Gender').change(function () {
-            if ($(this).val() === 'female') {
-                $('#maidenNameField').show();
-            } else {
-                $('#maidenNameField').hide();
-            }
-        });
-    </script>
-}
-
-
+</html>
+    

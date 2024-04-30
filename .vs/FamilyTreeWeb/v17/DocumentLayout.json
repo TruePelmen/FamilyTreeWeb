@@ -11,11 +11,23 @@
       "RelativeMoniker": "D:0:0:{32B78B0F-7945-429C-8843-C3FBE41DE6F7}|FamilyTreeWeb\\FamilyTreeWeb.csproj|solutionrelative:familytreeweb\\views\\tree\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{32B78B0F-7945-429C-8843-C3FBE41DE6F7}|FamilyTreeWeb\\FamilyTreeWeb.csproj|d:\\university\\software engineering 2\\familytreeweb29.04\\familytreeweb\\familytreeweb\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{32B78B0F-7945-429C-8843-C3FBE41DE6F7}|FamilyTreeWeb\\FamilyTreeWeb.csproj|d:\\university\\software engineering 2\\familytreeweb29.04\\familytreeweb\\familytreeweb\\views\\tree\\viewtree.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{32B78B0F-7945-429C-8843-C3FBE41DE6F7}|FamilyTreeWeb\\FamilyTreeWeb.csproj|solutionrelative:familytreeweb\\views\\tree\\viewtree.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32B78B0F-7945-429C-8843-C3FBE41DE6F7}|FamilyTreeWeb\\FamilyTreeWeb.csproj|d:\\university\\software engineering 2\\familytreeweb29.04\\familytreeweb\\familytreeweb\\models\\tree.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32B78B0F-7945-429C-8843-C3FBE41DE6F7}|FamilyTreeWeb\\FamilyTreeWeb.csproj|solutionrelative:familytreeweb\\models\\tree.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32B78B0F-7945-429C-8843-C3FBE41DE6F7}|FamilyTreeWeb\\FamilyTreeWeb.csproj|D:\\University\\Software Engineering 2\\FamilyTreeWeb29.04\\FamilyTreeWeb\\familytreeweb\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{32B78B0F-7945-429C-8843-C3FBE41DE6F7}|FamilyTreeWeb\\FamilyTreeWeb.csproj|solutionrelative:familytreeweb\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4E51D0CA-A07F-429D-A037-CCA5FEAE113A}|FamilyTreeWeb.Tests\\FamilyTreeWeb.Tests.csproj|d:\\university\\software engineering 2\\familytreeweb29.04\\familytreeweb\\familytreeweb.tests\\controllertests\\photocontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{32B78B0F-7945-429C-8843-C3FBE41DE6F7}|FamilyTreeWeb\\FamilyTreeWeb.csproj|d:\\university\\software engineering 2\\familytreeweb29.04\\familytreeweb\\familytreeweb\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32B78B0F-7945-429C-8843-C3FBE41DE6F7}|FamilyTreeWeb\\FamilyTreeWeb.csproj|solutionrelative:familytreeweb\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E51D0CA-A07F-429D-A037-CCA5FEAE113A}|FamilyTreeWeb.Tests\\FamilyTreeWeb.Tests.csproj|D:\\University\\Software Engineering 2\\FamilyTreeWeb29.04\\FamilyTreeWeb\\familytreeweb.tests\\controllertests\\photocontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4E51D0CA-A07F-429D-A037-CCA5FEAE113A}|FamilyTreeWeb.Tests\\FamilyTreeWeb.Tests.csproj|solutionrelative:familytreeweb.tests\\controllertests\\photocontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -26,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -47,14 +59,27 @@
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\University\\Software Engineering 2\\FamilyTreeWeb29.04\\FamilyTreeWeb\\FamilyTreeWeb\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "FamilyTreeWeb\\Views\\Home\\Index.cshtml",
-              "ToolTip": "D:\\University\\Software Engineering 2\\FamilyTreeWeb29.04\\FamilyTreeWeb\\FamilyTreeWeb\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "FamilyTreeWeb\\Views\\Home\\Index.cshtml",
-              "ViewState": "AQIAAF0AAAAAAAAAAAAAAGsAAABSAAAA",
+              "Title": "ViewTree.cshtml",
+              "DocumentMoniker": "D:\\University\\Software Engineering 2\\FamilyTreeWeb29.04\\FamilyTreeWeb\\FamilyTreeWeb\\Views\\Tree\\ViewTree.cshtml",
+              "RelativeDocumentMoniker": "FamilyTreeWeb\\Views\\Tree\\ViewTree.cshtml",
+              "ToolTip": "D:\\University\\Software Engineering 2\\FamilyTreeWeb29.04\\FamilyTreeWeb\\FamilyTreeWeb\\Views\\Tree\\ViewTree.cshtml",
+              "RelativeToolTip": "FamilyTreeWeb\\Views\\Tree\\ViewTree.cshtml",
+              "ViewState": "AQIAACYBAAAAAAAAAAAAADYBAABkAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-30T15:47:16.848Z",
+              "WhenOpened": "2024-04-30T16:57:51.212Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\University\\Software Engineering 2\\FamilyTreeWeb29.04\\FamilyTreeWeb\\FamilyTreeWeb\\Program.cs",
+              "RelativeDocumentMoniker": "FamilyTreeWeb\\Program.cs",
+              "ToolTip": "D:\\University\\Software Engineering 2\\FamilyTreeWeb29.04\\FamilyTreeWeb\\FamilyTreeWeb\\Program.cs",
+              "RelativeToolTip": "FamilyTreeWeb\\Program.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAACEAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-30T16:08:04.359Z",
               "EditorCaption": ""
             },
             {
@@ -65,9 +90,9 @@
               "RelativeDocumentMoniker": "FamilyTreeWeb\\Views\\Tree\\Create.cshtml",
               "ToolTip": "D:\\University\\Software Engineering 2\\FamilyTreeWeb29.04\\FamilyTreeWeb\\FamilyTreeWeb\\Views\\Tree\\Create.cshtml",
               "RelativeToolTip": "FamilyTreeWeb\\Views\\Tree\\Create.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAGMAAAAAAAAAAAAAAJIAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-30T15:38:15.057Z",
+              "WhenOpened": "2024-04-30T16:04:31.823Z",
               "EditorCaption": ""
             },
             {
@@ -78,7 +103,7 @@
               "RelativeDocumentMoniker": "FamilyTreeWeb\\Controllers\\TreeController.cs",
               "ToolTip": "D:\\University\\Software Engineering 2\\FamilyTreeWeb29.04\\FamilyTreeWeb\\FamilyTreeWeb\\Controllers\\TreeController.cs",
               "RelativeToolTip": "FamilyTreeWeb\\Controllers\\TreeController.cs",
-              "ViewState": "AQIAAGwAAAAAAAAAAAAYwH0AAAAlAAAA",
+              "ViewState": "AQIAAHEAAAAAAAAAAAAAAIMAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-30T15:37:50.74Z",
               "EditorCaption": ""
@@ -86,6 +111,32 @@
             {
               "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "Tree.cs",
+              "DocumentMoniker": "D:\\University\\Software Engineering 2\\FamilyTreeWeb29.04\\FamilyTreeWeb\\FamilyTreeWeb\\Models\\Tree.cs",
+              "RelativeDocumentMoniker": "FamilyTreeWeb\\Models\\Tree.cs",
+              "ToolTip": "D:\\University\\Software Engineering 2\\FamilyTreeWeb29.04\\FamilyTreeWeb\\FamilyTreeWeb\\Models\\Tree.cs",
+              "RelativeToolTip": "FamilyTreeWeb\\Models\\Tree.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-30T15:58:40.434Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\University\\Software Engineering 2\\FamilyTreeWeb29.04\\FamilyTreeWeb\\FamilyTreeWeb\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "FamilyTreeWeb\\Views\\Home\\Index.cshtml",
+              "ToolTip": "D:\\University\\Software Engineering 2\\FamilyTreeWeb29.04\\FamilyTreeWeb\\FamilyTreeWeb\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "FamilyTreeWeb\\Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAAIQAAAAAAAAAAAAAAIAAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-30T15:47:16.848Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "PhotoControllerTests.cs",
               "DocumentMoniker": "D:\\University\\Software Engineering 2\\FamilyTreeWeb29.04\\FamilyTreeWeb\\FamilyTreeWeb.Tests\\ControllerTests\\PhotoControllerTests.cs",
               "RelativeDocumentMoniker": "FamilyTreeWeb.Tests\\ControllerTests\\PhotoControllerTests.cs",
@@ -93,8 +144,7 @@
               "RelativeToolTip": "FamilyTreeWeb.Tests\\ControllerTests\\PhotoControllerTests.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAlAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-24T08:58:36.277Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-24T08:58:36.277Z"
             }
           ]
         }
