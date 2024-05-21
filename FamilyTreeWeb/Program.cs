@@ -31,7 +31,7 @@ app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Tree}/{action=Create}");
-    //pattern: "{controller=Home}/{action=Index}/{id?}");
+    //pattern: "{controller=Tree}/{action=Create}");
+    pattern: "{controller=Home}/{action=Index}/{id?}");
 
 app.Run();
