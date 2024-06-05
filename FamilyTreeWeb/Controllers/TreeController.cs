@@ -133,17 +133,11 @@ namespace FamilyTreeWeb.Controllers
             return View(person);
         }
 
-        //[Route("Tree/Create")]
+        [HttpGet]
         public IActionResult Create()
         {
             return View();
         }
-
-        //[Route("Tree/Manage")]
-        //public IActionResult Manage()
-        //{
-        //    return View();
-        //}
 
         [HttpPost]
         public async Task<IActionResult> Create([Bind("Id,Name,PrimaryPerson,Type")] Tree tree)
@@ -152,10 +146,46 @@ namespace FamilyTreeWeb.Controllers
             {
                 _context.Add(tree);
                 await _context.SaveChangesAsync();
-                // Redirect to the ViewTree action method with the ID of the newly created tree
-                return RedirectToAction("ViewTree", new { id = tree.Id });
+                return RedirectToAction("ViewTree", new { id = tree.PrimaryPerson });
             }
             return View(tree);
         }
+
+        [HttpGet]
+        public async Task<IActionResult> Edit(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var tree = await _context.Trees.FindAsync(id);
+            if (tree == null)
+            {
+                return NotFound();
+            }
+            return View(tree);
+        }
+
+
+        [HttpPost]
+        public async Task<IActionResult> Edit([Bind("Id,Name,PrimaryPerson,Type")] Tree tree)
+        {
+            if (ModelState.IsValid)
+            {
+                try
+                {
+                    _context.Update(tree);
+                    await _context.SaveChangesAsync();
+                }
+                catch (DbUpdateConcurrencyException)
+                {
+                        return NotFound();
+                }
+                return RedirectToAction("ViewTree", new { id = tree.PrimaryPerson });
+            }
+            return View(tree);
+        }
+
     }
 }

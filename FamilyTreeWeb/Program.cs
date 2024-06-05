@@ -31,8 +31,8 @@ app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Tree}/{action=Create}");
+    pattern: "{controller=Tree}/{action=Edit}/{id}",
+    defaults: new { id = 9 });
 
-    //pattern: "{controller=Home}/{action=Index}/{id?}");
 
 app.Run();

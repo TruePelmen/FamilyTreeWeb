@@ -1,11 +1,12 @@
-﻿@{
-    ViewBag.Title = "Головна сторінка";
+﻿@model FamilyTreeWeb.Models.Tree
+@{
+    ViewBag.Title = "Редагування дерева";
 }
 
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Сторінка ведення родоводу</title>
+    <title>@ViewBag.Title</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
         body {
@@ -29,6 +30,7 @@
             position: relative;
             overflow: hidden;
             margin-bottom: 30px;
+            height: 100px;
         }
 
         .overlay {
@@ -89,26 +91,19 @@
             margin-top: 20px;
             margin-bottom: 20px;
         }
-
     </style>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container">
-            <a class="navbar-brand" href="#"></a>
+            <a class="navbar-brand" href="#">Дерево Роду</a>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="@Url.Action("Index", "Home")">Головна</a>
+                        @Html.ActionLink("Головна", "Index", "Home", null, new { @class = "nav-link" })
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="@Url.Action("Login", "Account")">Увійти</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="@Url.Action("Register", "Account")">Зареєструватися</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="@Url.Action("Create", "Tree")">Створити дерево</a>
+                        @Html.ActionLink("Створити дерево", "Create", "Tree", null, new { @class = "nav-link" })
                     </li>
                 </ul>
             </div>
@@ -116,42 +111,35 @@
     </nav>
 
     <div class="container">
-        <div class="jumbotron">
-            <div class="overlay"></div>
-            <div class="jumbotron-content">
-                <h1 class="display-3">Дерево Роду</h1>
-                <p class="lead">Сплітаймо нитки нашого минулого</p>
-            </div>
-        </div>
-
-        <h1>Публічні дерева</h1>
-        <form class="search-form">
+        <h1>Редагування дерева</h1>
+        <form asp-action="Edit" asp-route-id="@Model.Id" method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
-                <input type="text" class="form-control" id="searchInput" placeholder="Пошук за назвою дерева">
+                <label asp-for="Name" class="control-label">Назва дерева</label>
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PrimaryPerson" class="control-label">Основна особа</label>
+                <input asp-for="PrimaryPerson" class="form-control" />
+                <span asp-validation-for="PrimaryPerson" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Type" class="control-label">Тип дерева</label>
+                <select asp-for="Type" class="form-control">
+                    <option value="public">Публічне</option>
+                    <option value="private">Приватне</option>
+                </select>
+                <span asp-validation-for="Type" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Зберегти" class="btn btn-primary" />
             </div>
         </form>
-
-        <div class="tree-container">
-            @foreach (var tree in Model)
-            {
-                <div class="tree-item" onclick="window.location.href='@Url.Action("ViewTree", "Tree", new { id = tree.PrimaryPerson})'">
-                    <h2 class="tree-name">@tree.Name</h2>
-                </div>
-            }
-        </div>
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script>
-        $(document).ready(function () {
-            $("#searchInput").on("keyup", function () {
-                var value = $(this).val().toLowerCase();
-                $(".tree-item").filter(function () {
-                    $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
-                });
-            });
-        });
-    </script>
 </body>
 </html>

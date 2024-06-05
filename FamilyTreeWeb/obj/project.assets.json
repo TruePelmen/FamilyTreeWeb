@@ -2511,24 +2511,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Alex\\.nuget\\packages\\": {},
-    "D:\\VS 2022\\VS 2022 Tools, components, SDK\\NuGetPackages": {}
+    "C:\\Users\\olesy\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\University\\Software Engineering 2\\FamilyTreeWeb29.04\\FamilyTreeWeb\\FamilyTreeWeb\\FamilyTreeWeb.csproj",
+      "projectUniqueName": "C:\\Users\\olesy\\OneDrive\\Документи\\GitHub\\FamilyTreeWeb\\FamilyTreeWeb\\FamilyTreeWeb.csproj",
       "projectName": "FamilyTreeWeb",
-      "projectPath": "D:\\University\\Software Engineering 2\\FamilyTreeWeb29.04\\FamilyTreeWeb\\FamilyTreeWeb\\FamilyTreeWeb.csproj",
-      "packagesPath": "C:\\Users\\Alex\\.nuget\\packages\\",
-      "outputPath": "D:\\University\\Software Engineering 2\\FamilyTreeWeb29.04\\FamilyTreeWeb\\FamilyTreeWeb\\obj\\",
+      "projectPath": "C:\\Users\\olesy\\OneDrive\\Документи\\GitHub\\FamilyTreeWeb\\FamilyTreeWeb\\FamilyTreeWeb.csproj",
+      "packagesPath": "C:\\Users\\olesy\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\olesy\\OneDrive\\Документи\\GitHub\\FamilyTreeWeb\\FamilyTreeWeb\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "D:\\VS 2022\\VS 2022 Tools, components, SDK\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Alex\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\olesy\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -2536,7 +2531,6 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -2598,7 +2592,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
