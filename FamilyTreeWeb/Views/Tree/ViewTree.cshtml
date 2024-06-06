@@ -308,10 +308,16 @@
                         <a class="nav-link" href="@Url.Action("Index", "Home")">Головна</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="@Url.Action("AllPeople", "Tree", new {id = Model.Tree.Id} )">Список осіб</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="@Url.Action("Gallery", "Photo", new {id = Model.Tree.Id})">Галерея</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="@Url.Action("Calendar", "Calendar", new {id = Model.Tree.Id} )">Календар</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="@Url.Action("Edit", "Tree", new {id = Model.Tree.Id} )">Редагувати дерево</a>
                     </li>
                 </ul>
             </div>
@@ -342,8 +348,8 @@
                 else
 				{
                             <button class="round-button small-button">
-                            <img src="https://previews.dropbox.com/p/thumb/ACMEs52nSjRzUEJd7CQp3aoa5J8_bAYspanlY-yCQ8kisvtCE7LA2TepffCXL8jM_G_FBEiIzJuEC87HMW_EE-dyXqgo95V6Z2NmuRbVQSQmkLQSYE8D177ELigGU9iO-pEtjPsh_ercfcSRoK-T1h6FDMCoZdK-6Abb12z3jR3h0Zt4yXJNJUxLNurDouxkZn-pWVOpv2E468K9tBaff985QpC74Jra4NAbj3n2dsNuNlnIVsecZfT7z8OZ4SZDMt-QOVLJrWCCkCy3gSqt-iJKKBaKTOAsaXUshVTzuHS0THKGtC0-3_ZMuySQrk_TB7Cs3PF4IQBEypWuTtmCTh6z/p.png" alt="Plus Icon">
-                        </button> 
+                        <img src="https://previews.dropbox.com/p/thumb/ACQ2QyztmmQYeuFaFDz4jvpASQ_6sdfX9y_9G1YBJMcBkFmYl4VnSQg0dkhvFZsjcRKDOyZ3TADSKmy0SYxykIabBoyV2U5TqIHNdaKdbAphiTggoj901TRo2qCZHuxCBG4pZymWyT093tpYmXRRvtjGyTlSp4SAD5HdIXrz2iy41CBSnxj9KI1Peu3MH6afHBceKnhChTI3x6MTFnfhQ5q92gZ2XvEgnmURFCikA10JF6TXwcV27MT-FXT8Q1oCJB58ochos9ImOzWTvcIOUTNtaXnmN34epeG6ERYs3VV5UJ9_GUJ6ZoFLtEnsKerddowdqZ_qZsCYLd0LaCMv0PIO/p.png" alt="Plus Icon">
+                            </button>
                  }
                            
             </div>
@@ -375,8 +381,8 @@
                 else
                 {
                                 <button class="round-button small-button">
-                                <img src="https://previews.dropbox.com/p/thumb/ACMEs52nSjRzUEJd7CQp3aoa5J8_bAYspanlY-yCQ8kisvtCE7LA2TepffCXL8jM_G_FBEiIzJuEC87HMW_EE-dyXqgo95V6Z2NmuRbVQSQmkLQSYE8D177ELigGU9iO-pEtjPsh_ercfcSRoK-T1h6FDMCoZdK-6Abb12z3jR3h0Zt4yXJNJUxLNurDouxkZn-pWVOpv2E468K9tBaff985QpC74Jra4NAbj3n2dsNuNlnIVsecZfT7z8OZ4SZDMt-QOVLJrWCCkCy3gSqt-iJKKBaKTOAsaXUshVTzuHS0THKGtC0-3_ZMuySQrk_TB7Cs3PF4IQBEypWuTtmCTh6z/p.png" alt="Plus Icon">
-                            </button>
+                        <img src="https://previews.dropbox.com/p/thumb/ACQ2QyztmmQYeuFaFDz4jvpASQ_6sdfX9y_9G1YBJMcBkFmYl4VnSQg0dkhvFZsjcRKDOyZ3TADSKmy0SYxykIabBoyV2U5TqIHNdaKdbAphiTggoj901TRo2qCZHuxCBG4pZymWyT093tpYmXRRvtjGyTlSp4SAD5HdIXrz2iy41CBSnxj9KI1Peu3MH6afHBceKnhChTI3x6MTFnfhQ5q92gZ2XvEgnmURFCikA10JF6TXwcV27MT-FXT8Q1oCJB58ochos9ImOzWTvcIOUTNtaXnmN34epeG6ERYs3VV5UJ9_GUJ6ZoFLtEnsKerddowdqZ_qZsCYLd0LaCMv0PIO/p.png" alt="Plus Icon">
+                                </button>
                 }
             </div>
 
@@ -404,8 +410,8 @@
                 else
                 {
                                 <button class="round-button small-button">
-                                <img src="https://previews.dropbox.com/p/thumb/ACMEs52nSjRzUEJd7CQp3aoa5J8_bAYspanlY-yCQ8kisvtCE7LA2TepffCXL8jM_G_FBEiIzJuEC87HMW_EE-dyXqgo95V6Z2NmuRbVQSQmkLQSYE8D177ELigGU9iO-pEtjPsh_ercfcSRoK-T1h6FDMCoZdK-6Abb12z3jR3h0Zt4yXJNJUxLNurDouxkZn-pWVOpv2E468K9tBaff985QpC74Jra4NAbj3n2dsNuNlnIVsecZfT7z8OZ4SZDMt-QOVLJrWCCkCy3gSqt-iJKKBaKTOAsaXUshVTzuHS0THKGtC0-3_ZMuySQrk_TB7Cs3PF4IQBEypWuTtmCTh6z/p.png" alt="Plus Icon">
-                            </button>
+                        <img src="https://previews.dropbox.com/p/thumb/ACQ2QyztmmQYeuFaFDz4jvpASQ_6sdfX9y_9G1YBJMcBkFmYl4VnSQg0dkhvFZsjcRKDOyZ3TADSKmy0SYxykIabBoyV2U5TqIHNdaKdbAphiTggoj901TRo2qCZHuxCBG4pZymWyT093tpYmXRRvtjGyTlSp4SAD5HdIXrz2iy41CBSnxj9KI1Peu3MH6afHBceKnhChTI3x6MTFnfhQ5q92gZ2XvEgnmURFCikA10JF6TXwcV27MT-FXT8Q1oCJB58ochos9ImOzWTvcIOUTNtaXnmN34epeG6ERYs3VV5UJ9_GUJ6ZoFLtEnsKerddowdqZ_qZsCYLd0LaCMv0PIO/p.png" alt="Plus Icon">
+                                </button>
                 }
             </div>
 
@@ -436,8 +442,8 @@
                 else
                 {
                                 <button class="round-button small-button">
-                                <img src="https://previews.dropbox.com/p/thumb/ACMEs52nSjRzUEJd7CQp3aoa5J8_bAYspanlY-yCQ8kisvtCE7LA2TepffCXL8jM_G_FBEiIzJuEC87HMW_EE-dyXqgo95V6Z2NmuRbVQSQmkLQSYE8D177ELigGU9iO-pEtjPsh_ercfcSRoK-T1h6FDMCoZdK-6Abb12z3jR3h0Zt4yXJNJUxLNurDouxkZn-pWVOpv2E468K9tBaff985QpC74Jra4NAbj3n2dsNuNlnIVsecZfT7z8OZ4SZDMt-QOVLJrWCCkCy3gSqt-iJKKBaKTOAsaXUshVTzuHS0THKGtC0-3_ZMuySQrk_TB7Cs3PF4IQBEypWuTtmCTh6z/p.png" alt="Plus Icon">
-                            </button>
+                        <img src="https://previews.dropbox.com/p/thumb/ACQ2QyztmmQYeuFaFDz4jvpASQ_6sdfX9y_9G1YBJMcBkFmYl4VnSQg0dkhvFZsjcRKDOyZ3TADSKmy0SYxykIabBoyV2U5TqIHNdaKdbAphiTggoj901TRo2qCZHuxCBG4pZymWyT093tpYmXRRvtjGyTlSp4SAD5HdIXrz2iy41CBSnxj9KI1Peu3MH6afHBceKnhChTI3x6MTFnfhQ5q92gZ2XvEgnmURFCikA10JF6TXwcV27MT-FXT8Q1oCJB58ochos9ImOzWTvcIOUTNtaXnmN34epeG6ERYs3VV5UJ9_GUJ6ZoFLtEnsKerddowdqZ_qZsCYLd0LaCMv0PIO/p.png" alt="Plus Icon">
+                                </button>
                 }
             </div>
         </div>
@@ -480,7 +486,7 @@
                 else
                 {
                     <button class="round-button central-button">
-                        <img src="https://previews.dropbox.com/p/thumb/ACMEs52nSjRzUEJd7CQp3aoa5J8_bAYspanlY-yCQ8kisvtCE7LA2TepffCXL8jM_G_FBEiIzJuEC87HMW_EE-dyXqgo95V6Z2NmuRbVQSQmkLQSYE8D177ELigGU9iO-pEtjPsh_ercfcSRoK-T1h6FDMCoZdK-6Abb12z3jR3h0Zt4yXJNJUxLNurDouxkZn-pWVOpv2E468K9tBaff985QpC74Jra4NAbj3n2dsNuNlnIVsecZfT7z8OZ4SZDMt-QOVLJrWCCkCy3gSqt-iJKKBaKTOAsaXUshVTzuHS0THKGtC0-3_ZMuySQrk_TB7Cs3PF4IQBEypWuTtmCTh6z/p.png" alt="Plus Icon">
+                        <img src="https://previews.dropbox.com/p/thumb/ACQ2QyztmmQYeuFaFDz4jvpASQ_6sdfX9y_9G1YBJMcBkFmYl4VnSQg0dkhvFZsjcRKDOyZ3TADSKmy0SYxykIabBoyV2U5TqIHNdaKdbAphiTggoj901TRo2qCZHuxCBG4pZymWyT093tpYmXRRvtjGyTlSp4SAD5HdIXrz2iy41CBSnxj9KI1Peu3MH6afHBceKnhChTI3x6MTFnfhQ5q92gZ2XvEgnmURFCikA10JF6TXwcV27MT-FXT8Q1oCJB58ochos9ImOzWTvcIOUTNtaXnmN34epeG6ERYs3VV5UJ9_GUJ6ZoFLtEnsKerddowdqZ_qZsCYLd0LaCMv0PIO/p.png" alt="Plus Icon">
                     </button>
                 }
             </div>
@@ -524,7 +530,7 @@
                 else
                 {
                     <button class="round-button central-button">
-                        <img src="https://previews.dropbox.com/p/thumb/ACMEs52nSjRzUEJd7CQp3aoa5J8_bAYspanlY-yCQ8kisvtCE7LA2TepffCXL8jM_G_FBEiIzJuEC87HMW_EE-dyXqgo95V6Z2NmuRbVQSQmkLQSYE8D177ELigGU9iO-pEtjPsh_ercfcSRoK-T1h6FDMCoZdK-6Abb12z3jR3h0Zt4yXJNJUxLNurDouxkZn-pWVOpv2E468K9tBaff985QpC74Jra4NAbj3n2dsNuNlnIVsecZfT7z8OZ4SZDMt-QOVLJrWCCkCy3gSqt-iJKKBaKTOAsaXUshVTzuHS0THKGtC0-3_ZMuySQrk_TB7Cs3PF4IQBEypWuTtmCTh6z/p.png" alt="Plus Icon">
+                        <img src="https://previews.dropbox.com/p/thumb/ACQ2QyztmmQYeuFaFDz4jvpASQ_6sdfX9y_9G1YBJMcBkFmYl4VnSQg0dkhvFZsjcRKDOyZ3TADSKmy0SYxykIabBoyV2U5TqIHNdaKdbAphiTggoj901TRo2qCZHuxCBG4pZymWyT093tpYmXRRvtjGyTlSp4SAD5HdIXrz2iy41CBSnxj9KI1Peu3MH6afHBceKnhChTI3x6MTFnfhQ5q92gZ2XvEgnmURFCikA10JF6TXwcV27MT-FXT8Q1oCJB58ochos9ImOzWTvcIOUTNtaXnmN34epeG6ERYs3VV5UJ9_GUJ6ZoFLtEnsKerddowdqZ_qZsCYLd0LaCMv0PIO/p.png" alt="Plus Icon">
                     </button>
                 }
             </div>
@@ -569,7 +575,7 @@
                     <div class="card small">
                 
                 <button class="round-button small-button">
-                    <img src="https://previews.dropbox.com/p/thumb/ACMEs52nSjRzUEJd7CQp3aoa5J8_bAYspanlY-yCQ8kisvtCE7LA2TepffCXL8jM_G_FBEiIzJuEC87HMW_EE-dyXqgo95V6Z2NmuRbVQSQmkLQSYE8D177ELigGU9iO-pEtjPsh_ercfcSRoK-T1h6FDMCoZdK-6Abb12z3jR3h0Zt4yXJNJUxLNurDouxkZn-pWVOpv2E468K9tBaff985QpC74Jra4NAbj3n2dsNuNlnIVsecZfT7z8OZ4SZDMt-QOVLJrWCCkCy3gSqt-iJKKBaKTOAsaXUshVTzuHS0THKGtC0-3_ZMuySQrk_TB7Cs3PF4IQBEypWuTtmCTh6z/p.png" alt="Plus Icon">
+                    <img src="https://previews.dropbox.com/p/thumb/ACQ2QyztmmQYeuFaFDz4jvpASQ_6sdfX9y_9G1YBJMcBkFmYl4VnSQg0dkhvFZsjcRKDOyZ3TADSKmy0SYxykIabBoyV2U5TqIHNdaKdbAphiTggoj901TRo2qCZHuxCBG4pZymWyT093tpYmXRRvtjGyTlSp4SAD5HdIXrz2iy41CBSnxj9KI1Peu3MH6afHBceKnhChTI3x6MTFnfhQ5q92gZ2XvEgnmURFCikA10JF6TXwcV27MT-FXT8Q1oCJB58ochos9ImOzWTvcIOUTNtaXnmN34epeG6ERYs3VV5UJ9_GUJ6ZoFLtEnsKerddowdqZ_qZsCYLd0LaCMv0PIO/p.png" alt="Plus Icon">
                 </button>
                 
 					    </div>

@@ -14,7 +14,6 @@ namespace FamilyTreeWeb.Controllers
             _context = context;
         }
 
-        [Route("Photo/{id}")]
         public async Task<IActionResult> Photo(int id)
         {
             var photo = _context.Photos
@@ -35,7 +34,6 @@ namespace FamilyTreeWeb.Controllers
             return View(photo);
         }
 
-        [Route("Gallery/{id}")]
         public async Task<IActionResult> Gallery(int id)
         {
             var tree = _context.Trees

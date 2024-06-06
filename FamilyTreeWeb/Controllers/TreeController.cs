@@ -14,7 +14,7 @@ namespace FamilyTreeWeb.Controllers
             _context = context;
         }
 
-        [Route("Tree/{id}")]
+
         public async Task<IActionResult> ViewTree(int? id)
         {
             if (id == null)
@@ -32,8 +32,8 @@ namespace FamilyTreeWeb.Controllers
                          .FirstOrDefault(p => p.Id == id);
             if (person != null)
             {
-                if(person.Children!=null)
-                {            
+                if (person.Children != null)
+                {
                     person.Children = new List<Person>();
                     foreach (var relationship in person.RelationshipPersonId1Navigations)
                     {
@@ -53,38 +53,32 @@ namespace FamilyTreeWeb.Controllers
 
 
                 // Вибрати батька та матір особи
-                if(person.Father != null)
-                {            
-                    person.Father = person.RelationshipPersonId2Navigations.FirstOrDefault(r => r.RelationshipType == "father-child")?.PersonId1Navigation;
-                    if (person.Father != null)
-                    {
-                        person.Father = _context.People
-                            .Include(p => p.Photos)
-                            .Include(p => p.RelationshipPersonId1Navigations)
-                            .ThenInclude(p => p.PersonId2Navigation)
-                            .Include(p => p.RelationshipPersonId2Navigations)
-                            .ThenInclude(p => p.PersonId1Navigation)
-                            .FirstOrDefault(p => p.Id == person.Father.Id);
-                    }
 
-                }
-
-                if(person.Mother!=null)
+                person.Father = person.RelationshipPersonId2Navigations.FirstOrDefault(r => r.RelationshipType == "father-child")?.PersonId1Navigation;
+                if (person.Father != null)
                 {
-                    person.Mother = person.RelationshipPersonId2Navigations.FirstOrDefault(r => r.RelationshipType == "mother-child")?.PersonId1Navigation;
-                    if (person.Mother != null)
-                    {
-                        person.Mother = _context.People
-                            .Include(p => p.Photos)
-                            .Include(p => p.RelationshipPersonId1Navigations)
-                            .ThenInclude(p => p.PersonId2Navigation)
-                            .Include(p => p.RelationshipPersonId2Navigations)
-                            .ThenInclude(p => p.PersonId1Navigation)
-                            .FirstOrDefault(p => p.Id == person.Mother.Id);
-                    }
+                    person.Father = _context.People
+                        .Include(p => p.Photos)
+                        .Include(p => p.RelationshipPersonId1Navigations)
+                        .ThenInclude(p => p.PersonId2Navigation)
+                        .Include(p => p.RelationshipPersonId2Navigations)
+                        .ThenInclude(p => p.PersonId1Navigation)
+                        .FirstOrDefault(p => p.Id == person.Father.Id);
+                }
+                person.Mother = person.RelationshipPersonId2Navigations.FirstOrDefault(r => r.RelationshipType == "mother-child")?.PersonId1Navigation;
+                if (person.Mother != null)
+                {
+                    person.Mother = _context.People
+                        .Include(p => p.Photos)
+                        .Include(p => p.RelationshipPersonId1Navigations)
+                        .ThenInclude(p => p.PersonId2Navigation)
+                        .Include(p => p.RelationshipPersonId2Navigations)
+                        .ThenInclude(p => p.PersonId1Navigation)
+                        .FirstOrDefault(p => p.Id == person.Mother.Id);
                 }
 
-                if(person.Gender!=null)
+
+                if (person.Gender != null)
                 {
                     if (person.Gender == "male")
                     {
@@ -107,7 +101,7 @@ namespace FamilyTreeWeb.Controllers
                        .ThenInclude(p => p.PersonId1Navigation)
                        .FirstOrDefault(p => p.Id == person.Spouse.Id);
                     person.Spouse.Father = person.Spouse.RelationshipPersonId2Navigations.FirstOrDefault(r => r.RelationshipType == "father-child")?.PersonId1Navigation;
-                    if(person.Spouse.Father != null)
+                    if (person.Spouse.Father != null)
                     {
                         person.Spouse.Father = _context.People
                             .Include(p => p.Photos)
@@ -140,7 +134,7 @@ namespace FamilyTreeWeb.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Create([Bind("Id,Name,PrimaryPerson,Type")] Tree tree)
+        public async Task<IActionResult> Create([Bind("Name,PrimaryPerson,Type")] Tree tree)
         {
             if (ModelState.IsValid)
             {
@@ -186,6 +180,21 @@ namespace FamilyTreeWeb.Controllers
             }
             return View(tree);
         }
+
+        public async Task<IActionResult> AllPeople(int? id)
+        {
+            var people = await _context.People
+                            .Include(p => p.Photos)
+                            .Include(p => p.Tree)
+                            .Include(p => p.RelationshipPersonId1Navigations)
+                                .ThenInclude(r => r.PersonId2Navigation)
+                            .Include(p => p.RelationshipPersonId2Navigations)
+                                .ThenInclude(r => r.PersonId1Navigation)
+                            .Where(p => p.Tree.Id == id)
+                            .ToListAsync();
+            return View(people);
+        }
+
 
     }
 }

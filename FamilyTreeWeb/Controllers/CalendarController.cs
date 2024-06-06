@@ -14,7 +14,6 @@ namespace FamilyTreeWeb.Controllers
             _context = context;
         }
 
-        [Route("Calendar/{id}")]
         public async Task<IActionResult> Calendar(int? id)
         {
             if (id == null)

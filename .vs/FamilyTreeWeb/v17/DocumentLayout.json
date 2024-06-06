@@ -7,32 +7,88 @@
       "RelativeMoniker": "D:0:0:{32B78B0F-7945-429C-8843-C3FBE41DE6F7}|FamilyTreeWeb\\FamilyTreeWeb.csproj|solutionrelative:familytreeweb\\views\\tree\\viewtree.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{32B78B0F-7945-429C-8843-C3FBE41DE6F7}|FamilyTreeWeb\\FamilyTreeWeb.csproj|c:\\users\\olesy\\onedrive\\\u0434\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\github\\familytreeweb\\familytreeweb\\views\\tree\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{32B78B0F-7945-429C-8843-C3FBE41DE6F7}|FamilyTreeWeb\\FamilyTreeWeb.csproj|solutionrelative:familytreeweb\\views\\tree\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{32B78B0F-7945-429C-8843-C3FBE41DE6F7}|FamilyTreeWeb\\FamilyTreeWeb.csproj|c:\\users\\olesy\\onedrive\\\u0434\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\github\\familytreeweb\\familytreeweb\\controllers\\personcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32B78B0F-7945-429C-8843-C3FBE41DE6F7}|FamilyTreeWeb\\FamilyTreeWeb.csproj|solutionrelative:familytreeweb\\controllers\\personcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{32B78B0F-7945-429C-8843-C3FBE41DE6F7}|FamilyTreeWeb\\FamilyTreeWeb.csproj|c:\\users\\olesy\\onedrive\\\u0434\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\github\\familytreeweb\\familytreeweb\\views\\tree\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{32B78B0F-7945-429C-8843-C3FBE41DE6F7}|FamilyTreeWeb\\FamilyTreeWeb.csproj|solutionrelative:familytreeweb\\views\\tree\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{32B78B0F-7945-429C-8843-C3FBE41DE6F7}|FamilyTreeWeb\\FamilyTreeWeb.csproj|c:\\users\\olesy\\onedrive\\\u0434\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\github\\familytreeweb\\familytreeweb\\views\\person\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{32B78B0F-7945-429C-8843-C3FBE41DE6F7}|FamilyTreeWeb\\FamilyTreeWeb.csproj|solutionrelative:familytreeweb\\views\\person\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{32B78B0F-7945-429C-8843-C3FBE41DE6F7}|FamilyTreeWeb\\FamilyTreeWeb.csproj|c:\\users\\olesy\\onedrive\\\u0434\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\github\\familytreeweb\\familytreeweb\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{32B78B0F-7945-429C-8843-C3FBE41DE6F7}|FamilyTreeWeb\\FamilyTreeWeb.csproj|solutionrelative:familytreeweb\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{32B78B0F-7945-429C-8843-C3FBE41DE6F7}|FamilyTreeWeb\\FamilyTreeWeb.csproj|c:\\users\\olesy\\onedrive\\\u0434\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\github\\familytreeweb\\familytreeweb\\controllers\\photocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32B78B0F-7945-429C-8843-C3FBE41DE6F7}|FamilyTreeWeb\\FamilyTreeWeb.csproj|solutionrelative:familytreeweb\\controllers\\photocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32B78B0F-7945-429C-8843-C3FBE41DE6F7}|FamilyTreeWeb\\FamilyTreeWeb.csproj|c:\\users\\olesy\\onedrive\\\u0434\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\github\\familytreeweb\\familytreeweb\\controllers\\profilecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32B78B0F-7945-429C-8843-C3FBE41DE6F7}|FamilyTreeWeb\\FamilyTreeWeb.csproj|solutionrelative:familytreeweb\\controllers\\profilecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32B78B0F-7945-429C-8843-C3FBE41DE6F7}|FamilyTreeWeb\\FamilyTreeWeb.csproj|c:\\users\\olesy\\onedrive\\\u0434\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\github\\familytreeweb\\familytreeweb\\models\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32B78B0F-7945-429C-8843-C3FBE41DE6F7}|FamilyTreeWeb\\FamilyTreeWeb.csproj|solutionrelative:familytreeweb\\models\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{32B78B0F-7945-429C-8843-C3FBE41DE6F7}|FamilyTreeWeb\\FamilyTreeWeb.csproj|c:\\users\\olesy\\onedrive\\\u0434\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\github\\familytreeweb\\familytreeweb\\controllers\\treecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{32B78B0F-7945-429C-8843-C3FBE41DE6F7}|FamilyTreeWeb\\FamilyTreeWeb.csproj|solutionrelative:familytreeweb\\controllers\\treecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{32B78B0F-7945-429C-8843-C3FBE41DE6F7}|FamilyTreeWeb\\FamilyTreeWeb.csproj|c:\\users\\olesy\\onedrive\\\u0434\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\github\\familytreeweb\\familytreeweb\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{32B78B0F-7945-429C-8843-C3FBE41DE6F7}|FamilyTreeWeb\\FamilyTreeWeb.csproj|solutionrelative:familytreeweb\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{32B78B0F-7945-429C-8843-C3FBE41DE6F7}|FamilyTreeWeb\\FamilyTreeWeb.csproj|c:\\users\\olesy\\onedrive\\\u0434\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\github\\familytreeweb\\familytreeweb\\views\\tree\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{32B78B0F-7945-429C-8843-C3FBE41DE6F7}|FamilyTreeWeb\\FamilyTreeWeb.csproj|solutionrelative:familytreeweb\\views\\tree\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32B78B0F-7945-429C-8843-C3FBE41DE6F7}|FamilyTreeWeb\\FamilyTreeWeb.csproj|c:\\users\\olesy\\onedrive\\\u0434\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\github\\familytreeweb\\familytreeweb\\views\\photo\\gallery.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{32B78B0F-7945-429C-8843-C3FBE41DE6F7}|FamilyTreeWeb\\FamilyTreeWeb.csproj|solutionrelative:familytreeweb\\views\\photo\\gallery.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32B78B0F-7945-429C-8843-C3FBE41DE6F7}|FamilyTreeWeb\\FamilyTreeWeb.csproj|c:\\users\\olesy\\onedrive\\\u0434\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\github\\familytreeweb\\familytreeweb\\views\\tree\\allpeople.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{32B78B0F-7945-429C-8843-C3FBE41DE6F7}|FamilyTreeWeb\\FamilyTreeWeb.csproj|solutionrelative:familytreeweb\\views\\tree\\allpeople.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32B78B0F-7945-429C-8843-C3FBE41DE6F7}|FamilyTreeWeb\\FamilyTreeWeb.csproj|c:\\users\\olesy\\onedrive\\\u0434\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\github\\familytreeweb\\familytreeweb\\views\\tree\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{32B78B0F-7945-429C-8843-C3FBE41DE6F7}|FamilyTreeWeb\\FamilyTreeWeb.csproj|solutionrelative:familytreeweb\\views\\tree\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32B78B0F-7945-429C-8843-C3FBE41DE6F7}|FamilyTreeWeb\\FamilyTreeWeb.csproj|c:\\users\\olesy\\onedrive\\\u0434\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\github\\familytreeweb\\familytreeweb\\controllers\\calendarcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32B78B0F-7945-429C-8843-C3FBE41DE6F7}|FamilyTreeWeb\\FamilyTreeWeb.csproj|solutionrelative:familytreeweb\\controllers\\calendarcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32B78B0F-7945-429C-8843-C3FBE41DE6F7}|FamilyTreeWeb\\FamilyTreeWeb.csproj|c:\\users\\olesy\\onedrive\\\u0434\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\github\\familytreeweb\\familytreeweb\\views\\calendar\\calendar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{32B78B0F-7945-429C-8843-C3FBE41DE6F7}|FamilyTreeWeb\\FamilyTreeWeb.csproj|solutionrelative:familytreeweb\\views\\calendar\\calendar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32B78B0F-7945-429C-8843-C3FBE41DE6F7}|FamilyTreeWeb\\FamilyTreeWeb.csproj|c:\\users\\olesy\\onedrive\\\u0434\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\github\\familytreeweb\\familytreeweb\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32B78B0F-7945-429C-8843-C3FBE41DE6F7}|FamilyTreeWeb\\FamilyTreeWeb.csproj|solutionrelative:familytreeweb\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32B78B0F-7945-429C-8843-C3FBE41DE6F7}|FamilyTreeWeb\\FamilyTreeWeb.csproj|c:\\users\\olesy\\onedrive\\\u0434\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\github\\familytreeweb\\familytreeweb\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32B78B0F-7945-429C-8843-C3FBE41DE6F7}|FamilyTreeWeb\\FamilyTreeWeb.csproj|solutionrelative:familytreeweb\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32B78B0F-7945-429C-8843-C3FBE41DE6F7}|FamilyTreeWeb\\FamilyTreeWeb.csproj|c:\\users\\olesy\\onedrive\\\u0434\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\github\\familytreeweb\\familytreeweb\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32B78B0F-7945-429C-8843-C3FBE41DE6F7}|FamilyTreeWeb\\FamilyTreeWeb.csproj|solutionrelative:familytreeweb\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{32B78B0F-7945-429C-8843-C3FBE41DE6F7}|FamilyTreeWeb\\FamilyTreeWeb.csproj|c:\\users\\olesy\\onedrive\\\u0434\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\github\\familytreeweb\\familytreeweb\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{32B78B0F-7945-429C-8843-C3FBE41DE6F7}|FamilyTreeWeb\\FamilyTreeWeb.csproj|solutionrelative:familytreeweb\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{32B78B0F-7945-429C-8843-C3FBE41DE6F7}|FamilyTreeWeb\\FamilyTreeWeb.csproj|c:\\users\\olesy\\onedrive\\\u0434\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\github\\familytreeweb\\familytreeweb\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{32B78B0F-7945-429C-8843-C3FBE41DE6F7}|FamilyTreeWeb\\FamilyTreeWeb.csproj|solutionrelative:familytreeweb\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{32B78B0F-7945-429C-8843-C3FBE41DE6F7}|FamilyTreeWeb\\FamilyTreeWeb.csproj|c:\\users\\olesy\\onedrive\\\u0434\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\github\\familytreeweb\\familytreeweb\\views\\account\\editaccount.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{32B78B0F-7945-429C-8843-C3FBE41DE6F7}|FamilyTreeWeb\\FamilyTreeWeb.csproj|solutionrelative:familytreeweb\\views\\account\\editaccount.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32B78B0F-7945-429C-8843-C3FBE41DE6F7}|FamilyTreeWeb\\FamilyTreeWeb.csproj|c:\\users\\olesy\\onedrive\\\u0434\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\github\\familytreeweb\\familytreeweb\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{32B78B0F-7945-429C-8843-C3FBE41DE6F7}|FamilyTreeWeb\\FamilyTreeWeb.csproj|solutionrelative:familytreeweb\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32B78B0F-7945-429C-8843-C3FBE41DE6F7}|FamilyTreeWeb\\FamilyTreeWeb.csproj|c:\\users\\olesy\\onedrive\\\u0434\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\github\\familytreeweb\\familytreeweb\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{32B78B0F-7945-429C-8843-C3FBE41DE6F7}|FamilyTreeWeb\\FamilyTreeWeb.csproj|solutionrelative:familytreeweb\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32B78B0F-7945-429C-8843-C3FBE41DE6F7}|FamilyTreeWeb\\FamilyTreeWeb.csproj|c:\\users\\olesy\\onedrive\\\u0434\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\github\\familytreeweb\\familytreeweb\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{32B78B0F-7945-429C-8843-C3FBE41DE6F7}|FamilyTreeWeb\\FamilyTreeWeb.csproj|solutionrelative:familytreeweb\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32B78B0F-7945-429C-8843-C3FBE41DE6F7}|FamilyTreeWeb\\FamilyTreeWeb.csproj|c:\\users\\olesy\\onedrive\\\u0434\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\github\\familytreeweb\\familytreeweb\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{32B78B0F-7945-429C-8843-C3FBE41DE6F7}|FamilyTreeWeb\\FamilyTreeWeb.csproj|solutionrelative:familytreeweb\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4E51D0CA-A07F-429D-A037-CCA5FEAE113A}|FamilyTreeWeb.Tests\\FamilyTreeWeb.Tests.csproj|c:\\users\\olesy\\onedrive\\\u0434\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\github\\familytreeweb\\familytreeweb.tests\\controllertests\\homecontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -103,53 +159,53 @@
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Edit.cshtml",
-              "DocumentMoniker": "C:\\Users\\olesy\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\GitHub\\FamilyTreeWeb\\FamilyTreeWeb\\Views\\Tree\\Edit.cshtml",
-              "RelativeDocumentMoniker": "FamilyTreeWeb\\Views\\Tree\\Edit.cshtml",
-              "ToolTip": "C:\\Users\\olesy\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\GitHub\\FamilyTreeWeb\\FamilyTreeWeb\\Views\\Tree\\Edit.cshtml",
-              "RelativeToolTip": "FamilyTreeWeb\\Views\\Tree\\Edit.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAE8AAAAUAAAA",
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\olesy\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\GitHub\\FamilyTreeWeb\\FamilyTreeWeb\\Views\\Person\\Create.cshtml",
+              "RelativeDocumentMoniker": "FamilyTreeWeb\\Views\\Person\\Create.cshtml",
+              "ToolTip": "C:\\Users\\olesy\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\GitHub\\FamilyTreeWeb\\FamilyTreeWeb\\Views\\Person\\Create.cshtml",
+              "RelativeToolTip": "FamilyTreeWeb\\Views\\Person\\Create.cshtml",
+              "ViewState": "AQIAACEAAAAAAAAAAAAWwD4AAAAZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-05T17:26:00.454Z",
+              "WhenOpened": "2024-06-06T02:11:57.526Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "_ViewStart.cshtml",
-              "DocumentMoniker": "C:\\Users\\olesy\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\GitHub\\FamilyTreeWeb\\FamilyTreeWeb\\Views\\_ViewStart.cshtml",
-              "RelativeDocumentMoniker": "FamilyTreeWeb\\Views\\_ViewStart.cshtml",
-              "ToolTip": "C:\\Users\\olesy\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\GitHub\\FamilyTreeWeb\\FamilyTreeWeb\\Views\\_ViewStart.cshtml",
-              "RelativeToolTip": "FamilyTreeWeb\\Views\\_ViewStart.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-05T17:24:25.182Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\olesy\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\GitHub\\FamilyTreeWeb\\FamilyTreeWeb\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "FamilyTreeWeb\\Views\\Home\\Index.cshtml",
-              "ToolTip": "C:\\Users\\olesy\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\GitHub\\FamilyTreeWeb\\FamilyTreeWeb\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "FamilyTreeWeb\\Views\\Home\\Index.cshtml",
-              "ViewState": "AQIAAFIAAAAAAAAAAAAWwG8AAAAZAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-30T15:47:16.848Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\olesy\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\GitHub\\FamilyTreeWeb\\FamilyTreeWeb\\Program.cs",
-              "RelativeDocumentMoniker": "FamilyTreeWeb\\Program.cs",
-              "ToolTip": "C:\\Users\\olesy\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\GitHub\\FamilyTreeWeb\\FamilyTreeWeb\\Program.cs",
-              "RelativeToolTip": "FamilyTreeWeb\\Program.cs",
-              "ViewState": "AQIAAAcAAAAAAAAAAAAiwCMAAAAAAAAA",
+              "Title": "Person.cs",
+              "DocumentMoniker": "C:\\Users\\olesy\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\GitHub\\FamilyTreeWeb\\FamilyTreeWeb\\Models\\Person.cs",
+              "RelativeDocumentMoniker": "FamilyTreeWeb\\Models\\Person.cs",
+              "ToolTip": "C:\\Users\\olesy\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\GitHub\\FamilyTreeWeb\\FamilyTreeWeb\\Models\\Person.cs",
+              "RelativeToolTip": "FamilyTreeWeb\\Models\\Person.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAFcAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-30T16:08:04.359Z",
+              "WhenOpened": "2024-06-06T02:07:04.918Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PersonController.cs",
+              "DocumentMoniker": "C:\\Users\\olesy\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\GitHub\\FamilyTreeWeb\\FamilyTreeWeb\\Controllers\\PersonController.cs",
+              "RelativeDocumentMoniker": "FamilyTreeWeb\\Controllers\\PersonController.cs",
+              "ToolTip": "C:\\Users\\olesy\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\GitHub\\FamilyTreeWeb\\FamilyTreeWeb\\Controllers\\PersonController.cs",
+              "RelativeToolTip": "FamilyTreeWeb\\Controllers\\PersonController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAFIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-06T02:04:16.107Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Gallery.cshtml",
+              "DocumentMoniker": "C:\\Users\\olesy\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\GitHub\\FamilyTreeWeb\\FamilyTreeWeb\\Views\\Photo\\Gallery.cshtml",
+              "RelativeDocumentMoniker": "FamilyTreeWeb\\Views\\Photo\\Gallery.cshtml",
+              "ToolTip": "C:\\Users\\olesy\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\GitHub\\FamilyTreeWeb\\FamilyTreeWeb\\Views\\Photo\\Gallery.cshtml",
+              "RelativeToolTip": "FamilyTreeWeb\\Views\\Photo\\Gallery.cshtml",
+              "ViewState": "AQIAABYAAAAAAAAAAAAWwCwAAABbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-06T02:03:19.732Z",
               "EditorCaption": ""
             },
             {
@@ -160,40 +216,234 @@
               "RelativeDocumentMoniker": "FamilyTreeWeb\\Views\\Tree\\ViewTree.cshtml",
               "ToolTip": "C:\\Users\\olesy\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\GitHub\\FamilyTreeWeb\\FamilyTreeWeb\\Views\\Tree\\ViewTree.cshtml",
               "RelativeToolTip": "FamilyTreeWeb\\Views\\Tree\\ViewTree.cshtml",
-              "ViewState": "AQIAACUBAAAAAAAAAAAWwDYBAAAyAAAA",
+              "ViewState": "AQIAACYBAAAAAAAAAAAWwEMBAAAOAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-04-30T16:57:51.212Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
+              "Title": "ProfileController.cs",
+              "DocumentMoniker": "C:\\Users\\olesy\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\GitHub\\FamilyTreeWeb\\FamilyTreeWeb\\Controllers\\ProfileController.cs",
+              "RelativeDocumentMoniker": "FamilyTreeWeb\\Controllers\\ProfileController.cs",
+              "ToolTip": "C:\\Users\\olesy\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\GitHub\\FamilyTreeWeb\\FamilyTreeWeb\\Controllers\\ProfileController.cs",
+              "RelativeToolTip": "FamilyTreeWeb\\Controllers\\ProfileController.cs",
+              "ViewState": "AQIAAC8AAAAAAAAAAAAAADcAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-06T01:20:28.911Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PhotoController.cs",
+              "DocumentMoniker": "C:\\Users\\olesy\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\GitHub\\FamilyTreeWeb\\FamilyTreeWeb\\Controllers\\PhotoController.cs",
+              "RelativeDocumentMoniker": "FamilyTreeWeb\\Controllers\\PhotoController.cs",
+              "ToolTip": "C:\\Users\\olesy\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\GitHub\\FamilyTreeWeb\\FamilyTreeWeb\\Controllers\\PhotoController.cs",
+              "RelativeToolTip": "FamilyTreeWeb\\Controllers\\PhotoController.cs",
+              "ViewState": "AQIAABQAAAAAAAAAAAAAADcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-06T01:20:34.996Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "Create.cshtml",
               "DocumentMoniker": "C:\\Users\\olesy\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\GitHub\\FamilyTreeWeb\\FamilyTreeWeb\\Views\\Tree\\Create.cshtml",
               "RelativeDocumentMoniker": "FamilyTreeWeb\\Views\\Tree\\Create.cshtml",
               "ToolTip": "C:\\Users\\olesy\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\GitHub\\FamilyTreeWeb\\FamilyTreeWeb\\Views\\Tree\\Create.cshtml",
               "RelativeToolTip": "FamilyTreeWeb\\Views\\Tree\\Create.cshtml",
-              "ViewState": "AQIAAIMAAAAAAAAAAAAWwFAAAAAeAAAA",
+              "ViewState": "AQIAAGEAAAAAAAAAAAAWwAAAAAAgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-04-30T16:04:31.823Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 11,
+              "Title": "CalendarController.cs",
+              "DocumentMoniker": "C:\\Users\\olesy\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\GitHub\\FamilyTreeWeb\\FamilyTreeWeb\\Controllers\\CalendarController.cs",
+              "RelativeDocumentMoniker": "FamilyTreeWeb\\Controllers\\CalendarController.cs",
+              "ToolTip": "C:\\Users\\olesy\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\GitHub\\FamilyTreeWeb\\FamilyTreeWeb\\Controllers\\CalendarController.cs",
+              "RelativeToolTip": "FamilyTreeWeb\\Controllers\\CalendarController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-06T01:20:49.952Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "TreeController.cs",
               "DocumentMoniker": "C:\\Users\\olesy\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\GitHub\\FamilyTreeWeb\\FamilyTreeWeb\\Controllers\\TreeController.cs",
               "RelativeDocumentMoniker": "FamilyTreeWeb\\Controllers\\TreeController.cs",
               "ToolTip": "C:\\Users\\olesy\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\GitHub\\FamilyTreeWeb\\FamilyTreeWeb\\Controllers\\TreeController.cs",
               "RelativeToolTip": "FamilyTreeWeb\\Controllers\\TreeController.cs",
-              "ViewState": "AQIAAJQAAAAAAAAAAAAAAKAAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-30T15:37:50.74Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 7,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\olesy\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\GitHub\\FamilyTreeWeb\\FamilyTreeWeb\\Views\\Tree\\Edit.cshtml",
+              "RelativeDocumentMoniker": "FamilyTreeWeb\\Views\\Tree\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\olesy\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\GitHub\\FamilyTreeWeb\\FamilyTreeWeb\\Views\\Tree\\Edit.cshtml",
+              "RelativeToolTip": "FamilyTreeWeb\\Views\\Tree\\Edit.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAGsAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-05T17:26:00.454Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Calendar.cshtml",
+              "DocumentMoniker": "C:\\Users\\olesy\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\GitHub\\FamilyTreeWeb\\FamilyTreeWeb\\Views\\Calendar\\Calendar.cshtml",
+              "RelativeDocumentMoniker": "FamilyTreeWeb\\Views\\Calendar\\Calendar.cshtml",
+              "ToolTip": "C:\\Users\\olesy\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\GitHub\\FamilyTreeWeb\\FamilyTreeWeb\\Views\\Calendar\\Calendar.cshtml",
+              "RelativeToolTip": "FamilyTreeWeb\\Views\\Calendar\\Calendar.cshtml",
+              "ViewState": "AQIAAF8AAAAAAAAAAAAWwBcAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-06T01:40:58.619Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "AllPeople.cshtml",
+              "DocumentMoniker": "C:\\Users\\olesy\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\GitHub\\FamilyTreeWeb\\FamilyTreeWeb\\Views\\Tree\\AllPeople.cshtml",
+              "RelativeDocumentMoniker": "FamilyTreeWeb\\Views\\Tree\\AllPeople.cshtml",
+              "ToolTip": "C:\\Users\\olesy\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\GitHub\\FamilyTreeWeb\\FamilyTreeWeb\\Views\\Tree\\AllPeople.cshtml",
+              "RelativeToolTip": "FamilyTreeWeb\\Views\\Tree\\AllPeople.cshtml",
+              "ViewState": "AQIAABEAAAAAAAAAAADwvzIAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-06T01:38:50.241Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\olesy\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\GitHub\\FamilyTreeWeb\\FamilyTreeWeb\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "FamilyTreeWeb\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\olesy\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\GitHub\\FamilyTreeWeb\\FamilyTreeWeb\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "FamilyTreeWeb\\Controllers\\HomeController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-06T01:20:46.058Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\olesy\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\GitHub\\FamilyTreeWeb\\FamilyTreeWeb\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "FamilyTreeWeb\\Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\olesy\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\GitHub\\FamilyTreeWeb\\FamilyTreeWeb\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "FamilyTreeWeb\\Controllers\\AccountController.cs",
+              "ViewState": "AQIAAGIAAAAAAAAAAAAAABgAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-05T17:05:10.153Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\olesy\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\GitHub\\FamilyTreeWeb\\FamilyTreeWeb\\Program.cs",
+              "RelativeDocumentMoniker": "FamilyTreeWeb\\Program.cs",
+              "ToolTip": "C:\\Users\\olesy\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\GitHub\\FamilyTreeWeb\\FamilyTreeWeb\\Program.cs",
+              "RelativeToolTip": "FamilyTreeWeb\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB4AAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-30T16:08:04.359Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\olesy\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\GitHub\\FamilyTreeWeb\\FamilyTreeWeb\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "FamilyTreeWeb\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\olesy\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\GitHub\\FamilyTreeWeb\\FamilyTreeWeb\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "FamilyTreeWeb\\Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAAFAAAAAAAAAAAAAWwGcAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-30T15:47:16.848Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "C:\\Users\\olesy\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\GitHub\\FamilyTreeWeb\\FamilyTreeWeb\\Views\\Account\\Register.cshtml",
+              "RelativeDocumentMoniker": "FamilyTreeWeb\\Views\\Account\\Register.cshtml",
+              "ToolTip": "C:\\Users\\olesy\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\GitHub\\FamilyTreeWeb\\FamilyTreeWeb\\Views\\Account\\Register.cshtml",
+              "RelativeToolTip": "FamilyTreeWeb\\Views\\Account\\Register.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAABHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-06T01:23:29.084Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\olesy\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\GitHub\\FamilyTreeWeb\\FamilyTreeWeb\\Views\\Account\\Login.cshtml",
+              "RelativeDocumentMoniker": "FamilyTreeWeb\\Views\\Account\\Login.cshtml",
+              "ToolTip": "C:\\Users\\olesy\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\GitHub\\FamilyTreeWeb\\FamilyTreeWeb\\Views\\Account\\Login.cshtml",
+              "RelativeToolTip": "FamilyTreeWeb\\Views\\Account\\Login.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-06T01:23:49.076Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "EditAccount.cshtml",
+              "DocumentMoniker": "C:\\Users\\olesy\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\GitHub\\FamilyTreeWeb\\FamilyTreeWeb\\Views\\Account\\EditAccount.cshtml",
+              "RelativeDocumentMoniker": "FamilyTreeWeb\\Views\\Account\\EditAccount.cshtml",
+              "ToolTip": "C:\\Users\\olesy\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\GitHub\\FamilyTreeWeb\\FamilyTreeWeb\\Views\\Account\\EditAccount.cshtml",
+              "RelativeToolTip": "FamilyTreeWeb\\Views\\Account\\EditAccount.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-06T01:24:41.291Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "C:\\Users\\olesy\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\GitHub\\FamilyTreeWeb\\FamilyTreeWeb\\Views\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "FamilyTreeWeb\\Views\\_ViewStart.cshtml",
+              "ToolTip": "C:\\Users\\olesy\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\GitHub\\FamilyTreeWeb\\FamilyTreeWeb\\Views\\_ViewStart.cshtml",
+              "RelativeToolTip": "FamilyTreeWeb\\Views\\_ViewStart.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-05T17:24:25.182Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Privacy.cshtml",
+              "DocumentMoniker": "C:\\Users\\olesy\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\GitHub\\FamilyTreeWeb\\FamilyTreeWeb\\Views\\Home\\Privacy.cshtml",
+              "RelativeDocumentMoniker": "FamilyTreeWeb\\Views\\Home\\Privacy.cshtml",
+              "ToolTip": "C:\\Users\\olesy\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\GitHub\\FamilyTreeWeb\\FamilyTreeWeb\\Views\\Home\\Privacy.cshtml",
+              "RelativeToolTip": "FamilyTreeWeb\\Views\\Home\\Privacy.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-06T00:58:33.21Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
               "Title": "TreeControllerTests.cs",
               "DocumentMoniker": "C:\\Users\\olesy\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\GitHub\\FamilyTreeWeb\\FamilyTreeWeb.Tests\\ControllerTests\\TreeControllerTests.cs",
               "RelativeDocumentMoniker": "FamilyTreeWeb.Tests\\ControllerTests\\TreeControllerTests.cs",
@@ -201,12 +451,11 @@
               "RelativeToolTip": "FamilyTreeWeb.Tests\\ControllerTests\\TreeControllerTests.cs",
               "ViewState": "AQIAAA4AAAAAAAAAAADwvz4AAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-30T17:15:35.845Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-30T17:15:35.845Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 23,
               "Title": "CalendarControllerTests.cs",
               "DocumentMoniker": "C:\\Users\\olesy\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\GitHub\\FamilyTreeWeb\\FamilyTreeWeb.Tests\\ControllerTests\\CalendarControllerTests.cs",
               "RelativeDocumentMoniker": "FamilyTreeWeb.Tests\\ControllerTests\\CalendarControllerTests.cs",
@@ -214,12 +463,11 @@
               "RelativeToolTip": "FamilyTreeWeb.Tests\\ControllerTests\\CalendarControllerTests.cs",
               "ViewState": "AQIAACIAAAAAAAAAAAAAAEMAAABRAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-05T17:02:16.414Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-05T17:02:16.414Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 22,
               "Title": "HomeControllerTests.cs",
               "DocumentMoniker": "C:\\Users\\olesy\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\GitHub\\FamilyTreeWeb\\FamilyTreeWeb.Tests\\ControllerTests\\HomeControllerTests.cs",
               "RelativeDocumentMoniker": "FamilyTreeWeb.Tests\\ControllerTests\\HomeControllerTests.cs",
@@ -227,25 +475,11 @@
               "RelativeToolTip": "FamilyTreeWeb.Tests\\ControllerTests\\HomeControllerTests.cs",
               "ViewState": "AQIAAAYAAAAAAAAAAAAAACoAAAAuAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-05T17:03:17.99Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-05T17:03:17.99Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "AccountController.cs",
-              "DocumentMoniker": "C:\\Users\\olesy\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\GitHub\\FamilyTreeWeb\\FamilyTreeWeb\\Controllers\\AccountController.cs",
-              "RelativeDocumentMoniker": "FamilyTreeWeb\\Controllers\\AccountController.cs",
-              "ToolTip": "C:\\Users\\olesy\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\GitHub\\FamilyTreeWeb\\FamilyTreeWeb\\Controllers\\AccountController.cs",
-              "RelativeToolTip": "FamilyTreeWeb\\Controllers\\AccountController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-05T17:05:10.153Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 24,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\olesy\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\GitHub\\FamilyTreeWeb\\FamilyTreeWeb\\appsettings.json",
               "RelativeDocumentMoniker": "FamilyTreeWeb\\appsettings.json",
@@ -253,12 +487,11 @@
               "RelativeToolTip": "FamilyTreeWeb\\appsettings.json",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAABuAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-06-05T16:41:05.673Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-05T16:41:05.673Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 26,
               "Title": "Tree.cs",
               "DocumentMoniker": "C:\\Users\\olesy\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\GitHub\\FamilyTreeWeb\\FamilyTreeWeb\\Models\\Tree.cs",
               "RelativeDocumentMoniker": "FamilyTreeWeb\\Models\\Tree.cs",
@@ -270,7 +503,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 27,
               "Title": "PhotoControllerTests.cs",
               "DocumentMoniker": "C:\\Users\\olesy\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0438\\GitHub\\FamilyTreeWeb\\FamilyTreeWeb.Tests\\ControllerTests\\PhotoControllerTests.cs",
               "RelativeDocumentMoniker": "FamilyTreeWeb.Tests\\ControllerTests\\PhotoControllerTests.cs",

@@ -15,7 +15,6 @@ namespace FamilyTreeWeb.Controllers
             _context = context;
         }
 
-        [Route("Profile/{id}")]
         public async Task<IActionResult> Profile(int? id)
         {
             if (id == null)

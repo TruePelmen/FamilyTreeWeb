@@ -1,0 +1,78 @@
+﻿@model FamilyTreeWeb.Models.Person
+
+@{
+    ViewData["Title"] = "Create Person";
+}
+
+<h1>Create Person</h1>
+
+<h4>Person</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div class="form-group">
+                <label asp-for="FirstName" class="control-label"></label>
+                <input asp-for="FirstName" class="form-control" />
+                <span asp-validation-for="FirstName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="LastName" class="control-label"></label>
+                <input asp-for="LastName" class="form-control" />
+                <span asp-validation-for="LastName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Gender" class="control-label"></label>
+                <select asp-for="Gender" class="form-control">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+                <span asp-validation-for="Gender" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="BirthDate" class="control-label"></label>
+                <input asp-for="BirthDate" class="form-control" />
+                <span asp-validation-for="BirthDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DeathDate" class="control-label"></label>
+                <input asp-for="DeathDate" class="form-control" />
+                <span asp-validation-for="DeathDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="BirthPlace" class="control-label"></label>
+                <input asp-for="BirthPlace" class="form-control" />
+                <span asp-validation-for="BirthPlace" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DeathPlace" class="control-label"></label>
+                <input asp-for="DeathPlace" class="form-control" />
+                <span asp-validation-for="DeathPlace" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Father" class="control-label">Father</label>
+                <select asp-for="Father" class="form-control" asp-items="@(ViewData["PeopleList"] as SelectList)">
+                    <option value="">Select a father</option>
+                </select>
+                <span asp-validation-for="Father" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Mother" class="control-label">Mother</label>
+                <select asp-for="Mother" class="form-control" asp-items="@(ViewData["PeopleList"] as SelectList)">
+                    <option value="">Select a mother</option>
+                </select>
+                <span asp-validation-for="Mother" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Spouse" class="control-label">Spouse</label>
+                <select asp-for="Spouse" class="form-control" asp-items="@(ViewData["PeopleList"] as SelectList)">
+                    <option value="">Select a spouse</option>
+                </select>
+                <span asp-validation-for="Spouse" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
